@@ -10,6 +10,7 @@
   * Guides
     * Signed Request
   * API referrences
+    * [Smart Contracts](https://github.com/RequestNetwork/requestNetwork/tree/master/packages/requestNetworkSmartContracts/)
 * Tutorials
   * [Online Payments](tutorials/online-payments.md)
 * [Design](design.md)
