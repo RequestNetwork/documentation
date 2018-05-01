@@ -13,4 +13,5 @@
 * Tutorials
   * [Online Payments](tutorials/online-payments.md)
 * [Design](design.md)
+* [Integrations](integrations.md)
 
