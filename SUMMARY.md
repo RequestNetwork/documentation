@@ -1,9 +1,9 @@
 # Table of contents
 
-* [Initial page](README.md)
-* [Home](hello1.md)
+* Request Network Wiki
 * Documentation
   * [Whitepaper](http://google.in)
+  * [Smart Audits Yellowpaper](https://request.network/assets/pdf/request_yellowpaper_smart_audits.pdf)
 * Development
   * Getting started
   * Protocol
