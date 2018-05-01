@@ -6,10 +6,11 @@
   * [Smart Audits Yellowpaper](https://request.network/assets/pdf/request_yellowpaper_smart_audits.pdf)
 * Development
   * Getting started
-  * Protocol
+  * [Protocol](development/protocol.md)
   * Guides
     * Signed Request
   * API referrences
 * Tutorials
   * [Online Payments](tutorials/online-payments.md)
+* [Design](design.md)
 
