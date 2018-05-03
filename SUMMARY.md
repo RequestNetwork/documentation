@@ -1,12 +1,10 @@
 # Table of contents
 
 * Request Network Wiki
-* Documentation
-  * [Whitepaper](http://google.in)
-  * [Smart Audits Yellowpaper](https://request.network/assets/pdf/request_yellowpaper_smart_audits.pdf)
+* Use cases
 * Development
-  * Getting started
   * [Protocol](development/protocol.md)
+  * Getting started
   * Guides
     * Signed Request
   * API referrences
@@ -15,4 +13,7 @@
   * [Online Payments](tutorials/online-payments.md)
 * [Design](design.md)
 * [Integrations](integrations.md)
+* Documentation
+  * [Whitepaper](http://google.in)
+  * [Smart Audits Yellowpaper](https://request.network/assets/pdf/request_yellowpaper_smart_audits.pdf)
 
