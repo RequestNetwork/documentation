@@ -255,7 +255,7 @@ Example:
 
 Otherwise, if the payer click on 'cancel & go back to merchant', the gateway will redirect to the **callbackUrl** concatenated with the signed request json object stringified.
 
- Your signature ensure that only the information you signed can be broadcasted on ethereum's blockchain
+Your signature ensure that only the information you signed can be broadcasted on ethereum's blockchain
 
 ## Additional info
 
@@ -340,7 +340,7 @@ If you need to reconcile the payment with your own system, the library provides 
 | --- | --- | --- |
 | txHash | string | hash of the ethereum transaction |
 
- Transaction information may not appear instantly after user paid the request and got redirected to the callbackUrl. Also you will have to call the method getRequestByTransactionHash until you receive a response with the transaction data.
+Transaction information may not appear instantly after user paid the request and got redirected to the callbackUrl. Also you will have to call the method getRequestByTransactionHash until you receive a response with the transaction data.
 
 #### 2. Compare the signature to verify the order is as expected
 
@@ -381,7 +381,7 @@ For that you need to call an additionnal method:
 | --- | --- | --- |
 | requestData | string | request data bytes \(variable found in transaction json object above `transaction.method.parameters._requestData`\) |
 
- From that point if you stored the signed request information on a database, you just need to verify that transaction.method.parameters.\_signature matches a known signature
+From that point if you stored the signed request information on a database, you just need to verify that transaction.method.parameters.\_signature matches a known signature
 
 #### 3. Query the blockchain until the payment is complete
 

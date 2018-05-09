@@ -1,7 +1,6 @@
 # Table of contents
 
 * Introduction
-* Introduction
 * Use cases
 * Development
   * [Protocol](development/protocol.md)
