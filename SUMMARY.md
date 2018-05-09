@@ -1,6 +1,6 @@
 # Table of contents
 
-* Request Network Wiki
+* Introduction
 * Use cases
 * Development
   * [Protocol](development/protocol.md)
