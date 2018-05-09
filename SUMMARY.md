@@ -1,6 +1,7 @@
 # Table of contents
 
 * Introduction
+* Introduction
 * Use cases
 * Development
   * [Protocol](development/protocol.md)
@@ -10,6 +11,7 @@
   * Javacript Library
   * API referrences
     * [Smart Contracts](https://github.com/RequestNetwork/requestNetwork/tree/master/packages/requestNetworkSmartContracts/)
+* Bug bounty
 * Tutorials
   * [Online Payments](tutorials/online-payments.md)
 * [Design](design.md)
