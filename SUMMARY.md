@@ -7,6 +7,7 @@
   * Getting started
   * Guides
     * Signed Request
+  * Javacript Library
   * API referrences
     * [Smart Contracts](https://github.com/RequestNetwork/requestNetwork/tree/master/packages/requestNetworkSmartContracts/)
 * Tutorials
