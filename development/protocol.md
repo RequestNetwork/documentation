@@ -1,5 +1,4 @@
-# A short introduction to the Request Network for the builders of the ecosystem
-This is the very beginning of a wiki gathering the necessary information to build and innovate on Request. Note that many features (including extensions and adding more currencies) are not yet documented nor implemented as the project is still early and we decided to publish features continuously rather than wait longer and publish a complete product.
+# Protocol
 
 ## Ecosystem Environment
 A mindmap was created to gather high level information about the protocol and the use cases, feel free to have a look:
