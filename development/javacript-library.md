@@ -39,7 +39,7 @@ const payeesInfo = [{
   idAddress: payeeAddress,
   paymentAddress: payeeAddress,
   expectedAmount: web3.utils.toWei('1.5', 'ether'),
-}]
+}];
 
 const { request } = await requestNetwork.createRequest(
   RequestNetwork.Types.Role.Payee,
@@ -153,5 +153,11 @@ The payer is necessary to validate the signed request
 await request.pay([web3.utils.toWei('1.5', 'ether')]).on('broadcasted', () => {});
 ```
 
-## Accessing the Private API
+## Accessing the internal services
 
+For advanced use, it is possible to access the internal layers of the library:
+
+```javascript
+const requestNetwork = new RequestNetwork();
+await requestNetwork.requestEthereumService.accept(requestId);
+```
