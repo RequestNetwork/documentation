@@ -86,14 +86,14 @@ const { request } = await requestNetwork.createRequest(
     role,
     Types.Currency.ETH,
     [{
-        idAddress: accounts[0],
-        paymentAddress: accounts[0],
+        idAddress: '0xc157274276a4e59974cca11b590b9447b26a8051',
+        paymentAddress: '0xc157274276a4e59974cca11b590b9447b26a8051',
         additional: 5,
         expectedAmount: 100,
     }],
     {
-        idAddress: accounts[1],
-        refundAddress: accounts[1],
+        idAddress: '0x014fcc05c76687456e569561ae9956c0ec0ec223',
+        refundAddress: '0x014fcc05c76687456e569561ae9956c0ec0ec223',
     }
 );
 ```
@@ -111,6 +111,18 @@ await request.pay([web3.utils.toWei('1.5', 'ether')]);
 ```
 
 For example for Requests in ETH, the amounts are in wei. An amount of 100 will be 100 wei. An amount of 0.1 will be rounded down to 0 wei.
+
+### Refund a Request
+
+```javascript
+await request.refund([web3.utils.toWei('1.5', 'ether')]);
+```
+
+### Accept a Request
+
+```javascript
+await request.accept();
+```
 
 ### Cancel a Request
 
