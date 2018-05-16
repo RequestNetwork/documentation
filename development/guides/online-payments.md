@@ -61,7 +61,7 @@ If someone accesses your mnemonic seed, he won’t be able to access the money y
 
 The developer view of the flow can be seen in the picture below:
 
-![Developer view of the flow](https://github.com/RequestNetwork/documentation/tree/7c877349644f7e4c7f096bca41761d4ad894762b/tutorials/flow-diagram.png)
+![Developer view of the flow](https://i.imgur.com/7bGGF3Ag.png)
 
 ### 1. Create a request for payment on your back-end
 
@@ -214,7 +214,7 @@ pay-with-button {
 
 #### a. Adding the button to your website
 
-![pay-with button](https://github.com/RequestNetwork/documentation/tree/7c877349644f7e4c7f096bca41761d4ad894762b/tutorials/button.png)
+![pay-with button](https://i.imgur.com/p6gr2CB.png)
 
 See example code for styling a "paywith ETH" button.
 
