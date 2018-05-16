@@ -112,6 +112,18 @@ await request.pay([web3.utils.toWei('1.5', 'ether')]);
 
 For example for Requests in ETH, the amounts are in wei. An amount of 100 will be 100 wei. An amount of 0.1 will be rounded down to 0 wei.
 
+### Add additionals (ex: tips)
+
+```javascript
+await request.addAdditionals([web3.utils.toWei('.05', 'ether')]);
+```
+
+### Add subtractions (ex: discounts)
+
+```javascript
+await request.addSubtractions([web3.utils.toWei('.05', 'ether')]);
+```
+
 ### Refund a Request
 
 ```javascript
