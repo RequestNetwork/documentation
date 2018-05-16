@@ -1,4 +1,4 @@
 # Signed Request
 
-\[to be written\]
+\[signed requests\]
 

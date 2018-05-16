@@ -1,10 +1,10 @@
 # Table of contents
 
 * [Introduction](README.md)
-* Use cases
+* [Use cases](use-cases.md)
 * Development
   * [Protocol](development/protocol.md)
-  * Getting started
+  * [Getting started](development/getting-started.md)
   * Guides
     * [Signed Request](development/guides/signed-request.md)
     * [Online Payments](development/guides/online-payments.md)
@@ -12,7 +12,7 @@
   * [Javacript Library](development/javacript-library.md)
   * API referrences
     * [Smart Contracts](https://github.com/RequestNetwork/requestNetwork/tree/master/packages/requestNetworkSmartContracts/)
-* Bug bounty
+* [Bug bounty](bug-bounty.md)
 * [Design](design.md)
 * [Integrations](integrations.md)
 * Documentation

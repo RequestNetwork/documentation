@@ -69,14 +69,14 @@ More information can be read [on this blog update](https://blog.request.network/
 
 The Request Network Foundation Team will release a first format for invoices metadata during Q1 2018.
 
-## Fees - _Available soon_
+## Fees
 
 * A REQ fee is burnt when a request is created
-* The amount is 0.1% of the amount of the request and limited to a maximum of ~1USD \(0.002 ETH on the test network at the 05/12/2017 rate\).
+* The amount is 0.1% of the amount of the request and limited to a maximum of ~1.50 USD
 * The fee is paid by the broadcaster the request
-* The fee is paid even if the request is declined. It acts as an anti-phishing and anti-spam mechanism.
-* The fee is paid in ETH.
-* We use a decentralized exchange to convert and burn the fee.
+* The fee is paid even if the request is declined. It acts as an anti-phishing and anti-spam mechanism
+* The fee is paid in ETH
+* We use a decentralized exchange to convert and burn the fee
 
 A mechanism to specify several recipients will be implemented inside the request which will allow developers to add a fee when someone creates a request through their application.
 
