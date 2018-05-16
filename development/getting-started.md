@@ -19,6 +19,13 @@ The links are:
 
 ## How to...
 
+### Report an problem
+
+* Create an issue [https://github.com/RequestNetwork/requestNetwork/issues](https://github.com/RequestNetwork/requestNetwork/issues)
+* Join the [requesthub on slack](https://join.slack.com/t/requesthub/shared_invite/enQtMjkwNDQwMzUwMjI3LWNlYTlmODViMmE3MzY0MWFiMTUzYmNiMWEyZmNiNWZhMjM3MTEzN2JkZTMxN2FhN2NmODFkNmU5MDBmOTUwMjA)
+
+## OK, but how to...
+
 ### Run the smart contract tests
 
 1. npm install -g lerna
