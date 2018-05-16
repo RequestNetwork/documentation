@@ -1,6 +1,6 @@
 # Table of contents
 
-* Introduction
+* [Introduction](README.md)
 * Use cases
 * Development
   * [Protocol](development/protocol.md)
