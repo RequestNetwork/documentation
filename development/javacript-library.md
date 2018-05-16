@@ -64,7 +64,7 @@ console.log(data.payee.balance.toString());
 Using import
 
 ```javascript
-import RequestNetwork from '@requestnetwork/request-network.js';
+import RequestNetwork, { Types } from '@requestnetwork/request-network.js';
 const requestNetwork = new RequestNetwork({ provider, ethNetworkId });
 ```
 
@@ -73,6 +73,7 @@ Using require
 ```javascript
 const RequestNetwork = require('@requestnetwork/request-network.js');
 const requestNetwork = new RequestNetwork.default({ provider, ethNetworkId });
+const Types = RequestNetwork.Types;
 ```
 
 The parameter for the constructor \(all optional\) are
