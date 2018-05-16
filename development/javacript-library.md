@@ -112,6 +112,21 @@ await request.pay([web3.utils.toWei('1.5', 'ether')]);
 
 For example for Requests in ETH, the amounts are in wei. An amount of 100 will be 100 wei. An amount of 0.1 will be rounded down to 0 wei.
 
+### Get information about a request
+
+Instances of the Request class hold minimal and constant values like the requestId and the currency:
+
+```javascript
+request.currency;
+request.requestId;
+```
+
+Other data of a request (like payer, payee, balance) should be retrieved with getData():
+
+```javascript
+await request.getData();
+```
+
 ### Add additionals (ex: tips)
 
 ```javascript
