@@ -1,12 +1,13 @@
 # Table of contents
 
 * Introduction
+* Introduction
 * Use cases
 * Development
   * [Protocol](development/protocol.md)
   * Getting started
   * Guides
-    * Signed Request
+    * [Signed Request](development/guides/signed-request.md)
   * [Javacript Library](development/javacript-library.md)
   * API referrences
     * [Smart Contracts](https://github.com/RequestNetwork/requestNetwork/tree/master/packages/requestNetworkSmartContracts/)

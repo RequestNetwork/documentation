@@ -7,12 +7,14 @@ Welcome to the requestNetwork.js documentation! requestNetwork.js is a Javascrip
 ## Installing
 
 ### Using NPM
+
 `npm install @requestnetwork/request-network.js --save`
 
 ### Using Yarn
+
 `yarn add @requestnetwork/request-network.js`
 
-(We are currently working on retrieving the name of requestnetwork.js)
+\(We are currently working on retrieving the name of requestnetwork.js\)
 
 ## Example
 
@@ -60,22 +62,25 @@ console.log(data.payee.balance.toString());
 ## Importing and Initializing
 
 Using import
+
 ```javascript
 import RequestNetwork from '@requestnetwork/request-network.js';
 const requestNetwork = new RequestNetwork({ provider, ethNetworkId });
 ```
 
 Using require
+
 ```javascript
 const RequestNetwork = require('@requestnetwork/request-network.js');
 const requestNetwork = new RequestNetwork.default({ provider, ethNetworkId });
 ```
 
-The parameter for the constructor (all optional) are
- - provider: Web3.js Provider instance an url as string
- - ethNetworkId: the Ethereum network ID (1: main, 2: morden, 3: ropsen, 4: rinkeby, 42: kovan, other: private)
- - bitoinNetworkId: the Bitcoin network ID
- - useIpfsPublic: false to use a private ipfs network
+The parameter for the constructor \(all optional\) are
+
+* provider: Web3.js Provider instance an url as string
+* ethNetworkId: the Ethereum network ID \(1: main, 2: morden, 3: ropsen, 4: rinkeby, 42: kovan, other: private\)
+* bitoinNetworkId: the Bitcoin network ID
+* useIpfsPublic: false to use a private ipfs network
 
 ## Features
 
@@ -121,19 +126,19 @@ request.currency;
 request.requestId;
 ```
 
-Other data of a request (like payer, payee, balance) should be retrieved with getData():
+Other data of a request \(like payer, payee, balance\) should be retrieved with getData\(\):
 
 ```javascript
 await request.getData();
 ```
 
-### Add additionals (ex: tips)
+### Add additionals \(ex: tips\)
 
 ```javascript
 await request.addAdditionals([web3.utils.toWei('.05', 'ether')]);
 ```
 
-### Add subtractions (ex: discounts)
+### Add subtractions \(ex: discounts\)
 
 ```javascript
 await request.addSubtractions([web3.utils.toWei('.05', 'ether')]);
@@ -200,3 +205,4 @@ For advanced use, it is possible to access the internal layers of the library:
 const requestNetwork = new RequestNetwork();
 await requestNetwork.requestEthereumService.accept(requestId);
 ```
+

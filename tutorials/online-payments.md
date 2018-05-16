@@ -30,7 +30,7 @@ A full example of calling Request is available on [this Github](https://github.c
 
 ### Create a wallet to store your currencies
 
-_If you already have your wallets set up, you can skip this part and go _[_here_](online-payments.md#create-an-account-to-store-your-identity)_._
+_If you already have your wallets set up, you can skip this part and go_ [_here_](online-payments.md#create-an-account-to-store-your-identity)_._
 
 #### Ether \(ETH\)
 
