@@ -1,19 +1,17 @@
 # Table of contents
 
 * Introduction
-* Introduction
 * Use cases
 * Development
   * [Protocol](development/protocol.md)
   * Getting started
   * Guides
     * [Signed Request](development/guides/signed-request.md)
+    * [Online Payments](development/guides/online-payments.md)
   * [Javacript Library](development/javacript-library.md)
   * API referrences
     * [Smart Contracts](https://github.com/RequestNetwork/requestNetwork/tree/master/packages/requestNetworkSmartContracts/)
 * Bug bounty
-* Tutorials
-  * [Online Payments](tutorials/online-payments.md)
 * [Design](design.md)
 * [Integrations](integrations.md)
 * Documentation
