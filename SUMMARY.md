@@ -12,6 +12,7 @@
   * [Javacript Library](development/javacript-library.md)
   * API referrences
     * [Smart Contracts](https://github.com/RequestNetwork/requestNetwork/tree/master/packages/requestNetworkSmartContracts/)
+    * [Javascript Library](http://docs-js-lib.request.network/)
 * [Bug bounty](bug-bounty.md)
 * [Design](design.md)
 * [Integrations](integrations.md)
