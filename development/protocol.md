@@ -73,7 +73,7 @@ The Request Network Foundation Team will release a first format for invoices met
 
 * A REQ fee is burnt when a request is created
 * The amount is 0.1% of the amount of the request and limited to a maximum of ~1.50 USD
-* The fee is paid by the broadcaster the request
+* The fee is paid by the broadcaster of the request
 * The fee is paid even if the request is declined. It acts as an anti-phishing and anti-spam mechanism
 * The fee is paid in ETH
 * We use a decentralized exchange to convert and burn the fee
