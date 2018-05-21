@@ -11,8 +11,8 @@
     * [Adding support for a new currency](development/guides/adding-support-for-a-new-currency.md)
   * [Javacript Library](development/javacript-library.md)
   * API referrences
-    * [Smart Contracts](https://github.com/RequestNetwork/requestNetwork/tree/master/packages/requestNetworkSmartContracts/)
-    * [Javascript Library](http://docs-js-lib.request.network/)
+    * [Smart Contracts](https://docs-smart-contracts.request.network/)
+    * [Javascript Library](https://docs-js-lib.request.network/)
 * [Bug bounty](bug-bounty.md)
 * [Design](design.md)
 * [Integrations](integrations.md)

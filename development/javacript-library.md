@@ -104,6 +104,8 @@ const { request } = await requestNetwork.createRequest(
 );
 ```
 
+Use the currency parameter to choose the currency of the request. Note that in local and rinkeby, REQ is the only ERC20 available.
+
 ### Retrieve a Request from its ID
 
 ```javascript
