@@ -1,4 +1,4 @@
-# Javacript Library
+# Using the Javacript Library
 
 ## Introduction
 

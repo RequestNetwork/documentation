@@ -9,7 +9,7 @@
     * [Signed Request](development/guides/signed-request.md)
     * [Online Payments](development/guides/online-payments.md)
     * [Adding support for a new currency](development/guides/adding-support-for-a-new-currency.md)
-  * [Javacript Library](development/javacript-library.md)
+  * [Using the Javacript Library](development/javacript-library.md)
   * API referrences
     * [Smart Contracts](https://docs-smart-contracts.request.network/)
     * [Javascript Library](https://docs-js-lib.request.network/)
