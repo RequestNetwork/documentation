@@ -1,4 +1,4 @@
-# Using the Javacript Library
+# Using the Javascript Library
 
 ## Introduction
 
