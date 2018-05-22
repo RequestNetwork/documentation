@@ -24,7 +24,7 @@ It also provide a Javascript library to play with. For now, only a validation fu
 
 #### Using
 
-```text
+```javascript
 import RequestNetworkDataFormat from 'requestnetwork-data-format';
 
 let result = RequestNetworkDataFormat.validate(A_JSON_OBJECT);
