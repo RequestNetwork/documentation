@@ -178,7 +178,7 @@ const signedRequest = await requestNetwork.createSignedRequest(
 );
 ```
 
-#### Retrieve from s serialized signed request
+#### Retrieve from a serialized signed request
 
 ```javascript
 import { SignedRequest } from '@requestnetwork/request-network.js';
