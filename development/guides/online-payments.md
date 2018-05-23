@@ -1,24 +1,14 @@
----
-title: Request Network for Developers
+# Online Payments
 
-language_tabs: # must be one of https://git.io/vQNgJ
-
-toc_footers:
-  - <a href='https://request.network'>Visit request.network website</a>
-
-search: true
----
-
-# Introduction
+## Introduction
 
 [Request Network](https://request.network) is a decentralized way to accept cryptocurrencies, in the future the Request Network Foundation will also develop an even more straight forward way to start accepting them, feel free to [subscribe to the newsletter](https://network.us12.list-manage.com/subscribe/post?u=e17500a255904b2fa3482005c&id=62ea53d6f0) to get alerted.
 
-
-*Disclaimer: Note that the Request Network is still in beta and the library is subject to evolve in the coming months. The Request Network is a protocol which is not owned or controlled by a company. This website won’t hold your cryptocurrencies. You are in charge of setting up a wallet on your own.*
+_Disclaimer: Note that the Request Network is still in beta and the library is subject to evolve in the coming months. The Request Network is a protocol which is not owned or controlled by a company. This website won’t hold your cryptocurrencies. You are in charge of setting up a wallet on your own._
 
 **Features:**
 
- During the first beta phase, the Request Network will only allow ether payments. During the second beta phase, the Request Network will allow ERC20 payments. Support for Bitcoin and other cryptocurrencies will follow closely.
+During the first beta phase, the Request Network will only allow ether payments. During the second beta phase, the Request Network will allow ERC20 payments. Support for Bitcoin and other cryptocurrencies will follow closely.
 
 **Plugins:**
 
@@ -36,48 +26,46 @@ It can be done in under 30 lines of code for a quick integration and can also be
 
 A full example of calling Request is available on [this Github](https://github.com/RequestNetwork/Request-OP).
 
-# Preconfiguration
+## Preconfiguration
 
-## Create a wallet to store your currencies
+### Create a wallet to store your currencies
 
-*If you already have your wallets set up, you can skip this part and go [here](#create-an-account-to-store-your-identity).*
+_If you already have your wallets set up, you can skip this part and go_ [_here_](online-payments.md#create-an-account-to-store-your-identity)_._
 
-### Ether (ETH)
+#### Ether \(ETH\)
 
 You need to prepare a wallet to receive the ethers.
 
-An ether address looks like this: 0xdD76B55ee6dAfe0c7c978bff69206d476a5b9Ce7 
+An ether address looks like this: 0xdD76B55ee6dAfe0c7c978bff69206d476a5b9Ce7
 
 You can create your own address on different websites including:
 
-* [Coinbase](https://www.coinbase.com) (easy set up, can be on mobile)
-* [MyCrypto](https://mycrypto.com/) (advanced setup)
-* [Metamask](https://metamask.io/) (in browser setup)
-* Hardware wallet like [Ledger](https://www.ledgerwallet.com/) or [Trezor](https://trezor.io/) (Hardware setup)
+* [Coinbase](https://www.coinbase.com) \(easy set up, can be on mobile\)
+* [MyCrypto](https://mycrypto.com/) \(advanced setup\)
+* [Metamask](https://metamask.io/) \(in browser setup\)
+* Hardware wallet like [Ledger](https://www.ledgerwallet.com/) or [Trezor](https://trezor.io/) \(Hardware setup\)
 
-## Create an account to store your identity.
+### Create an account to store your identity.
 
-This account is a key that does not hold your money, the purpose is to be the  proof that you are the one asking for a payment. 
+This account is a key that does not hold your money, the purpose is to be the proof that you are the one asking for a payment.
 
 You need to generate a 12 words mnemonic seed, then store it somewhere safe. We recommend:
 
 * [https://iancoleman.io/bip39/](https://iancoleman.io/bip39/)
 * [Metamask](https://metamask.io/)
-* [Ledger](https://www.ledgerwallet.com/) Wallet (using a 12 words seed)
-
+* [Ledger](https://www.ledgerwallet.com/) Wallet \(using a 12 words seed\)
 
 If someone accesses your mnemonic seed, he won’t be able to access the money you received on the other account. However he will be able to generate Requests in your name. Consider these words as a very important password.
 
-
-# Integrating Request Network
+## Integrating Request Network
 
 The developer view of the flow can be seen in the picture below:
 
-![Developer view of the flow](flow-diagram.png)
+![Developer view of the flow](https://i.imgur.com/7bGGF3Ag.png)
 
-## 1. Create a request for payment on your back-end
+### 1. Create a request for payment on your back-end
 
-### a. Add dependencies and instantiate Request Network
+#### a. Add dependencies and instantiate Request Network
 
 > On your backend, import the libraries:
 
@@ -91,9 +79,7 @@ var HDWalletProvider = require ('truffle-hdwallet-provider');
 
 **request-network.js** `npm install @requestnetwork/request-network.js --save`
 
-**truffle-hdwallet-provider**
-`npm install truffle-hdwallet-provider`
-
+**truffle-hdwallet-provider** `npm install truffle-hdwallet-provider`
 
 * Instantiate Request Network:
 
@@ -111,32 +97,28 @@ try {
 }
 ```
 
-request-network.js needs a Web3 provider to sign requests.
-Web3 library is a collection of modules which contain specific functionality for the ethereum ecosystem.
+request-network.js needs a Web3 provider to sign requests. Web3 library is a collection of modules which contain specific functionality for the ethereum ecosystem.
 
 In this guide we use **truffle-hdwallet-provider** which instantiates a Web3 provider to sign transactions for addresses derived from a 12-word mnemonic phrase.
 
-**`new HDWalletProvider(mnemonic, provider_uri, index)`** (see example)
+`new HDWalletProvider(mnemonic, provider_uri, index)` \(see example\)
 
-Parameter | Type | Description
---------- | ---- | -----------
-mnemonic | string | 12 word mnemonic which addresses are created from.
-provider_uri | number | URI of Ethereum client to send all Web3 requests.
-index | number (optional) | If specified, will tell the provider to manage the address at the index specified. Defaults to the first address (index 0).
+| Parameter | Type | Description |
+| --- | --- | --- |
+| mnemonic | string | 12 word mnemonic which addresses are created from. |
+| provider\_uri | number | URI of Ethereum client to send all Web3 requests. |
+| index | number \(optional\) | If specified, will tell the provider to manage the address at the index specified. Defaults to the first address \(index 0\). |
 
 By default, the HDWalletProvider will use the address of the first address that's generated from the mnemonic. If you pass in a specific index, it will use that address instead. Currently, the HDWalletProvider manages only one address at a time.
 
+`new RequestNetwork(provider, network_id)` \(see example\)
 
-**`new RequestNetwork(provider, network_id)`** (see example)
+| Parameter | Type | Description |
+| --- | --- | --- |
+| provider | object | Web3 Provider for the library to use. |
+| networkId | number | network id you're using, **must match the network of the provider's Ethereum client**. |
 
-Parameter | Type | Description
---------- | ---- | -----------
-provider |  object | Web3 Provider for the library to use.
-networkId | number | network id you're using, **must match the network of the provider's Ethereum client**.
- 
-
-
-### b. Signing a request
+#### b. Signing a request
 
 > Example:
 
@@ -155,7 +137,7 @@ var signedRequest = await requestnetwork.requestEthereumService.signRequestAsPay
 
 > The above command returns JSON structured like this:
 
-```json
+```javascript
 {
   "currencyContract": "0xafa312973909c3a541665e11c883a24a8eb10b2c",
   "data": "QmSsrdAPhD5UkRVDKVpCwf63nrUxBaNbYmpZ2njbku9Mi5",
@@ -174,23 +156,23 @@ var signedRequest = await requestnetwork.requestEthereumService.signRequestAsPay
 }
 ```
 
-Now we need to ask the library to create a request for payment. 
+Now we need to ask the library to create a request for payment.
 
-**`async requestnetwork.requestEthereumService.signRequestAsPayee(payeesIdAddress, expectedAmounts, expirationDate, payeesPaymentAddress, metadata)`** (see example)
+`async requestnetwork.requestEthereumService.signRequestAsPayee(payeesIdAddress, expectedAmounts, expirationDate, payeesPaymentAddress, metadata)` \(see example\)
 
-Parameter | Type | Description
---------- | ---- | -----------
-payeesIdAddress | string[] | ID address of the payee ([see step in Preconfiguration](#create-an-account-to-store-your-identity)). Additional payees can be added in the array. Position 0 is the main payee (the one who sign the request).
-expectedAmounts | number[] | Amount in Wei of the payment Request for each payee. (1Eth = 1000000000000000000 Wei)
-expirationDate | number | Timestamp in seconds of the date after which the signed request can not be paid anymore. We recommend to set:  `new Date().getTime() + 3600`
-payeesPaymentAddress | string[] (optional) | Address on which to receive the payment ([see step in Preconfiguration](#create-a-wallet-to-store-your-currencies)) for each payee
-metadata | String (optional) | Json string of the request's details (data will be hosted on ipfs). See below for more information
+| Parameter | Type | Description |
+| --- | --- | --- |
+| payeesIdAddress | string\[\] | ID address of the payee \([see step in Preconfiguration](online-payments.md#create-an-account-to-store-your-identity)\). Additional payees can be added in the array. Position 0 is the main payee \(the one who sign the request\). |
+| expectedAmounts | number\[\] | Amount in Wei of the payment Request for each payee. \(1Eth = 1000000000000000000 Wei\) |
+| expirationDate | number | Timestamp in seconds of the date after which the signed request can not be paid anymore. We recommend to set:  `new Date().getTime() + 3600` |
+| payeesPaymentAddress | string\[\] \(optional\) | Address on which to receive the payment \([see step in Preconfiguration](online-payments.md#create-a-wallet-to-store-your-currencies)\) for each payee |
+| metadata | String \(optional\) | Json string of the request's details \(data will be hosted on ipfs\). See below for more information |
 
-### c. Other currencies (available soon)
+#### c. Other currencies \(available soon\)
 
-### d. Store metadata
+#### d. Store metadata
 
-Request Network supports adding metadata to every request. 
+Request Network supports adding metadata to every request.
 
 Privacy: The metadata are public as of today. You will be able to select the privacy during the second part of the beta phase.
 
@@ -198,11 +180,11 @@ Accounting: Accounting standardized data will be specified during the first beta
 
 We use the following format `metadata = { reason: String, orderId: String }`
 
-## 2. Add a payment button on your front-end and redirect the user to the gateway
+### 2. Add a payment button on your front-end and redirect the user to the gateway
 
 > Example of Html and css code for styling a “pay with ETH” button:
 
-```html
+```markup
 <button class="pay-with-button">
   <img src="https://payments.request.network/assets/request-logo.png" style="height: 30px;">
   <span>Pay with&nbsp;</span>
@@ -210,7 +192,9 @@ We use the following format `metadata = { reason: String, orderId: String }`
   <span _ngcontent-c1="">&nbsp;ETH</span>
 </button>
 
-````
+`
+```
+
 ```css
 pay-with-button { 
   height: 60px;
@@ -228,13 +212,13 @@ pay-with-button {
 }
 ```
 
-### a. Adding the button to your website
+#### a. Adding the button to your website
 
-![pay-with button](button.png)
+![pay-with button](https://i.imgur.com/p6gr2CB.png)
 
 See example code for styling a "paywith ETH" button.
 
-### b.  Redirect to the gateway
+#### b.  Redirect to the gateway
 
 In order to ease the process for integrating a pay-with-request button on your website, the request app provides a gateway for displaying the info of a signed request and allowing someone to pay it.
 
@@ -251,13 +235,13 @@ The gateway url is `https://app.request.network/#/pay-with-request/<qsBase64>`
 
 where `qsBase64` is a base 64 encoded string of a JSON object containing the following **mandatory** parameters
 
-Parameter | Type | Description
---------- | ---- | -----------
-signedRequest | object | signed request object (see paragraph above for format)
-callbackUrl | string | url for the gateway to redirect after request has been paid
-networkId | string | id of the network on which you signed the request ([see step 1.](#1-create-a-request-for-payment-on-your-back-end))
+| Parameter | Type | Description |
+| --- | --- | --- |
+| signedRequest | object | signed request object \(see paragraph above for format\) |
+| callbackUrl | string | url for the gateway to redirect after request has been paid |
+| networkId | string | id of the network on which you signed the request \([see step 1.](online-payments.md#1-create-a-request-for-payment-on-your-back-end)\) |
 
-## Paying on the gateway
+### Paying on the gateway
 
 You can find an example of how a signed request looks like on the gateway on this [link](https://app.request.network/#/pay-with-request/eyJzaWduZWRSZXF1ZXN0Ijp7ImN1cnJlbmN5Q29udHJhY3QiOiIweGQ4OGFiOWIxNjkxMzQwZTA0YTViYmY3ODUyOWMxMWQ1OTJkMzVmNTciLCJkYXRhIjoiUW1Tc3JkQVBoRDVVa1JWREtWcEN3ZjYzbnJVeEJhTmJZbXBaMm5qYmt1OU1pNSIsImV4cGVjdGVkQW1vdW50cyI6WyIxNzUwMDAwMDAwMDAwMDAwMDAiXSwiZXhwaXJhdGlvbkRhdGUiOjE1MjQ3MTgxMzEzNjYsImhhc2giOiIweDQ1MmRlMGE2OWI3ZDBmM2I5N2ZlOTY5Mjg0NmZmOGM2NzkyODZhZDRmZGY0NGFkNjI3YWNkNWJmNzlmM2RjYTciLCJwYXllZXNJZEFkZHJlc3MiOlsiMHg4RjAyNTVlMjRCOTk4MjVlOUFENGJiNzUwNjY3OEYxOEM2MzA0NTNGIl0sInBheWVlc1BheW1lbnRBZGRyZXNzIjpbIjB4ZjlERjQ5MDE0NmIyOTQxOGE1OUY0M2REYjRBZmM1N0NkM2ZFZjg1NiJdLCJzaWduYXR1cmUiOiIweDE1ZWMwZjRlZjE3N2U1ZTk5YjRjYmUyOTI4NzY1MTY5ZDEwNzYxYzNlNzVjNzU0OTI3ODE3MDVhZTQ4MzlmZTg0NmVkYzAyMmExNjI1MzViOWQ1MDg4MmI2NTFmZGMyYTc1MTg3MzY0MWY2ZjA0NjQ5YjBjNGU4ODUzN2MwNjg1MWMifSwiY2FsbGJhY2tVcmwiOiJodHRwczovL3BheW1lbnRzLnJlcXVlc3QubmV0d29yay8jL2NvbmZpcm0vIiwibmV0d29ya0lkIjo0fQ)
 
@@ -265,9 +249,7 @@ On the gateway, the payer connects to his ether wallet and pays the request.
 
 Once the payment transaction is broadcasted, the gateway redirect to the **callbackUrl** concatenated with the string of the transaction hash.
 
-**<aside class="notice">
-Please note that the gateway only supports requests in ETH and with only one payee.
-</aside>**
+**Please note that, at the moment, the gateway only supports requests in ETH and with only one payee.**
 
 Example:
 
@@ -275,23 +257,19 @@ Example:
 
 Otherwise, if the payer click on 'cancel & go back to merchant', the gateway will redirect to the **callbackUrl** concatenated with the signed request json object stringified.
 
-<aside class="success">
-Your signature ensure that only the information you signed can be broadcasted on ethereum's blockchain
-</aside>
+Your signature ensure that only the information you signed can be broadcasted on ethereum's blockchain.
 
+## Additional info
 
-# Additional info
-
-## Verify your orders and/or Reconcile
+### Verify your orders and/or Reconcile
 
 After paying on the gateway the user is now redirected to your callback URL and you can display a custom message to confirm the success of the operation.
 
 Note that as a blockchain payment is only confirmed after a certain time, you can’t be sure that the payment has been done at this moment.
 
-You can view your payments at this URL, replacing the address with your own ID address (created in paragraph [Preconfiguration](#preconfiguration))
-https://app.request.network/#/search/0x54B4B2d8E2ECcC99385B01bE13DFB473c7885286
+You can view your payments at this URL, replacing the address with your own ID address \(created in paragraph [Preconfiguration](online-payments.md#preconfiguration)\) [https://app.request.network/\#/search/0x54B4B2d8E2ECcC99385B01bE13DFB473c7885286](https://app.request.network/#/search/0x54B4B2d8E2ECcC99385B01bE13DFB473c7885286)
 
-## Reconcile the payment with your own system
+### Reconcile the payment with your own system
 
 > Example:
 
@@ -307,7 +285,7 @@ https://app.request.network/#/search/0x54B4B2d8E2ECcC99385B01bE13DFB473c7885286
 
 > The above command returns JSON structured like this:
 
-```json
+```javascript
 {
   "transaction": {
     "blockHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
@@ -354,22 +332,19 @@ https://app.request.network/#/search/0x54B4B2d8E2ECcC99385B01bE13DFB473c7885286
 }
 ```
 
-### 1. Query the hash received during the callback from your backend to know which order it is
+#### 1. Query the hash received during the callback from your backend to know which order it is
 
 If you need to reconcile the payment with your own system, the library provides a method for getting the transaction information from a txHash:
 
-**`async requestnetwork.requestCoreService.getRequestByTransactionHash(txHash)`**
+`async requestnetwork.requestCoreService.getRequestByTransactionHash(txHash)`
 
-Parameter | Type | Description
---------- | ------- | -----------
-txHash | string | hash of the ethereum transaction
+| Parameter | Type | Description |
+| --- | --- | --- |
+| txHash | string | hash of the ethereum transaction |
 
-<aside class="notice">
-Transaction information may not appear instantly after user paid the request and got redirected to the callbackUrl.
-Also you will have to call the method getRequestByTransactionHash until you receive a response with the transaction data.
-</aside>
+Transaction information may not appear instantly after user paid the request and got redirected to the callbackUrl. Also you will have to call the method getRequestByTransactionHash until you receive a response with the transaction data.
 
-### 2. Compare the signature to verify the order is as expected
+#### 2. Compare the signature to verify the order is as expected
 
 Once you receive the **transaction** object, you need to check some parameters to ensure it actually corresponds to the broadcast of a request payment transaction.
 
@@ -385,7 +360,7 @@ data = requesnetwork.requestCoreService.parseBytesRequest(result.transaction.met
 
 > The above command returns JSON structured like this:
 
-```json
+```javascript
 {
   "creator": "0x8f0255e24b99825e9ad4bb7506678f18c630453f",
   "payer": "0x0000000000000000000000000000000000000000",
@@ -402,48 +377,44 @@ data = requesnetwork.requestCoreService.parseBytesRequest(result.transaction.met
 
 For that you need to call an additionnal method:
 
-**`requestnetwork.requestCoreService.parseBytesRequest(requestData)`**
+`requestnetwork.requestCoreService.parseBytesRequest(requestData)`
 
-Parameter | Type | Description
---------- | ------- | -----------
-requestData | string | request data bytes (variable found in transaction json object above `transaction.method.parameters._requestData`)
+| Parameter | Type | Description |
+| --- | --- | --- |
+| requestData | string | request data bytes \(variable found in transaction json object above `transaction.method.parameters._requestData`\) |
 
-<aside class="notice">
-From that point if you stored the signed request information on a database, you just need to verify that transaction.method.parameters._signature matches a known signature
-</aside>
+From that point if you stored the signed request information on a database, you just need to verify that transaction.method.parameters.\_signature matches a known signature
 
-### 3. Query the blockchain until the payment is complete
+#### 3. Query the blockchain until the payment is complete
 
 You need to query getRequestByTransactionHash until you have a request object with and verify the payment is correct.
 
-## Extras
+### Extras
 
-### Converting currencies
+#### Converting currencies
 
-A request has to be paid in the cryptocurrency it was created with for the moment. 
+A request has to be paid in the cryptocurrency it was created with for the moment.
 
 In the future, the request will be able to convert the currency automatically.
 
-If you would like to exchange cryptocurrency to fiat money, you will have to use one of the cryptocurrency exchange available in your country. 
+If you would like to exchange cryptocurrency to fiat money, you will have to use one of the cryptocurrency exchange available in your country.
 
-### Disputes & Fraud
+#### Disputes & Fraud
 
 There is no chargeback on the blockchain. To protect the user, automated escrow systems will be created and adding to this documentation in S2 2018.
 
-### Recurring payments (not available yet)
+#### Recurring payments \(not available yet\)
 
-### Creating your own gateway
+#### Creating your own gateway
 
 The Request Network Foundation is managing the app.request.network gateway. Anyone can create its own process or gateway to pay a request, by using the resources below.
 
 Resources:
 
-https://github.com/RequestNetwork/Request/wiki
+[https://github.com/RequestNetwork/Request/wiki](https://github.com/RequestNetwork/Request/wiki)
 
-https://github.com/RequestNetwork/Requestnetwork
+[https://github.com/RequestNetwork/Requestnetwork](https://github.com/RequestNetwork/Requestnetwork)
 
-### Next steps
+#### Next steps
 
 A dashboard is under development and will simplify the merchant process.
-
-
