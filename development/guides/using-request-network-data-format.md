@@ -2,9 +2,9 @@
 
 ### Introduction
 
-Because Request Network Protocol want to provide a full set of tools for the commerce, we provides also standard for the request data. 
+Because Request Network Protocol wants to provide a complete set of tools for commerce, we also provide standards for the format of request data. 
 
-On [Request Network github](https://github.com/RequestNetwork/requestNetwork/blob/master/packages/requestNetworkDataFormat), you can find a set of data format as Json Schema library that will provide such standards. It also provides a Javascript library to play with.
+On [Request Network github](https://github.com/RequestNetwork/requestNetwork/blob/master/packages/requestNetworkDataFormat), you can find a set of data format as a library of JSON schemas that provides such standards. It also provides a Javascript library to with tools related to these standard formats.
 
 ### Example of use with the library
 
@@ -54,7 +54,7 @@ const verySimpleData = {
 }
 
 
-let result = RequestNetworkDataFormat.validate(verySimpleDataformated);
+let result = RequestNetworkDataFormat.validate(verySimpleData);
 
 if (result.valid) {
     const { request } = await requestNetwork.createRequest(
@@ -62,11 +62,11 @@ if (result.valid) {
       RequestNetwork.Types.Currency.ETH,
       payeesInfo,
       payerInfo,
-      {data:JSON.stringify(dataformated)}
+      { data: JSON.stringify(verySimpleData) },
     );
 } else {
     // use the errors from result.errors
-    console.error(result.errors)
+    console.error(result.errors);
 }
 ```
 
