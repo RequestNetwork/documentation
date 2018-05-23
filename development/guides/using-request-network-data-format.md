@@ -4,7 +4,7 @@
 
 Request Network Data Format is a Json Schema library providing standards for the data of the Request Network protocol.
 
-It also provide a Javascript library to play with. For now, only a validation function is available.
+It also provides a Javascript library to play with. For now, only a validation function is available.
 
 ### Available JSON Schema
 
