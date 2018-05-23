@@ -4,7 +4,7 @@
 
 Because Request Network Protocol wants to provide a complete set of tools for commerce, we also provide standards for the format of request data. 
 
-On [Request Network github](https://github.com/RequestNetwork/requestNetwork/blob/master/packages/requestNetworkDataFormat), you can find a set of data format as a library of JSON schemas that provides such standards. It also provides a Javascript library to with tools related to these standard formats.
+On [Request Network github](https://github.com/RequestNetwork/requestNetwork/blob/master/packages/requestNetworkDataFormat), you can find a set of data format as a library of JSON schemas that provides such standards. It also provides a Javascript library with tools related to these standard formats.
 
 ### Example of use with the library
 
@@ -72,5 +72,5 @@ if (result.valid) {
 
 ### List of standards
 
-You can find the list of standard provided [here](https://github.com/RequestNetwork/requestNetwork/blob/master/packages/requestNetworkDataFormat).
+You can find the list of standard formats [here](https://github.com/RequestNetwork/requestNetwork/blob/master/packages/requestNetworkDataFormat).
 
