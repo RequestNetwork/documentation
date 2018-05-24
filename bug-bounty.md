@@ -1,4 +1,4 @@
 # Bug bounty
 
-\[bug bounty\]
+\[Content to come later\]
 

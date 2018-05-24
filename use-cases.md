@@ -1,4 +1,4 @@
 # Use cases
 
-\[use cases\]
+\[Content to come later\]
 
