@@ -418,3 +418,4 @@ Resources:
 #### Next steps
 
 A dashboard is under development and will simplify the merchant process.
+
