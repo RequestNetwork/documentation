@@ -11,7 +11,7 @@
     * [Online Payments](development/guides/online-payments.md)
     * [Using Request Network Data Format](development/guides/using-request-network-data-format.md)
     * [Adding support for a new currency](development/guides/adding-support-for-a-new-currency.md)
-  * API referrences
+  * API references
     * [Smart Contracts](https://docs-smart-contracts.request.network/)
     * [Javascript Library](https://docs-js-lib.request.network/)
 * [Bug bounty](bug-bounty.md)
