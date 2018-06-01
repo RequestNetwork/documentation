@@ -18,8 +18,7 @@
 * [Design](design.md)
 * [Integrations](integrations.md)
 * Documentation
-  * [Whitepaper](https://request.network/assets/pdf/request_whitepaper.pdf)
-  * [Smart Audits Yellowpaper](https://request.network/assets/pdf/request_yellowpaper_smart_audits.pdf)
   * [Whitepaper](documentation/whitepaper.md)
+  * [Smart Audits Yellowpaper](https://request.network/assets/pdf/request_yellowpaper_smart_audits.pdf)
 * [Roadmap](roadmap.md)
 
