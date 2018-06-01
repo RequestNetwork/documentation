@@ -20,5 +20,6 @@
 * Documentation
   * [Whitepaper](https://request.network/assets/pdf/request_whitepaper.pdf)
   * [Smart Audits Yellowpaper](https://request.network/assets/pdf/request_yellowpaper_smart_audits.pdf)
+  * [Whitepaper](documentation/whitepaper.md)
 * [Roadmap](roadmap.md)
 
