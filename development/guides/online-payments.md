@@ -12,8 +12,8 @@ During the first beta phase, the Request Network will only allow ether payments.
 
 **Plugins:**
 
-* Shopify: No plugin available yet
-* WooCommerce: [https://wooreq.com/](https://wooreq.com/)
+* Shopify: [https://reqify.com ](https://reqify.com%20)
+* WooCommerce: [https://wooreq.com](https://wooreq.com/)
 
 **Steps to integrate Request Network:**
 
