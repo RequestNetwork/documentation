@@ -70,9 +70,9 @@ The developer view of the flow can be seen in the picture below:
 > On your backend, import the libraries:
 
 ```javascript
-import RequestNetwork from '@requestnetwork/request-network.js';
+import RequestNetwork, { Types } from '@requestnetwork/request-network.js';
 
-var HDWalletProvider = require ('truffle-hdwallet-provider');
+const HDWalletProvider = require ('truffle-hdwallet-provider');
 ```
 
 * Install these two dependencies:
@@ -86,15 +86,11 @@ var HDWalletProvider = require ('truffle-hdwallet-provider');
 > Instantiating requestnetwork with HDWalletProvider on **Mainnet**:
 
 ```javascript
-var mnemonic = 'twelve word mnemonic phrase of the wallet used for signing the requests';
-var provider = new HDWalletProvider(mnemonic, 'https://mainnet.infura.io/');
-var networkId = 1; // 1 is for Mainnet (4 for Rinkeby testnet, 99 for local rpc)
+const mnemonic = 'twelve word mnemonic phrase of the wallet used for signing the requests';
+const provider = new HDWalletProvider(mnemonic, 'https://mainnet.infura.io/');
+const networkId = 1; // 1 is for Mainnet (4 for Rinkeby testnet, 99 for local rpc)
 
-try {
-  var requestnetwork = new RequestNetwork(provider, networkId);
-} catch (err) {
-  console.error(err);
-}
+const requestnetwork = new RequestNetwork(provider, networkId);
 ```
 
 request-network.js needs a Web3 provider to sign requests. Web3 library is a collection of modules which contain specific functionality for the ethereum ecosystem.
@@ -123,10 +119,10 @@ By default, the HDWalletProvider will use the address of the first address that'
 > Example:
 
 ```javascript
-var requestData = { reason: 'Order #030890 from Just Another Shop',
+const requestData = { reason: 'Order #030890 from Just Another Shop',
                     orderId: '030890' }
 
-var signedRequest = await requestnetwork.requestEthereumService.signRequestAsPayee(
+const signedRequest = await requestnetwork.requestEthereumService.signRequestAsPayee(
           ['0x8F0255e24B99825e9AD4bb7506678F18C630453F'],
           ['175000000000000000'],
           new Date().getTime() + 3600, // we put expiration after 1 hour here
@@ -156,21 +152,27 @@ var signedRequest = await requestnetwork.requestEthereumService.signRequestAsPay
 }
 ```
 
-Now we need to ask the library to create a request for payment.
+Now we need to ask the library to create a request for payment. 
 
-`async requestnetwork.requestEthereumService.signRequestAsPayee(payeesIdAddress, expectedAmounts, expirationDate, payeesPaymentAddress, metadata)` \(see example\)
+**`async requestNetwork.createSignedRequest(as, currency, payees, expirationDate, requestOptions)`** (see example)
 
-| Parameter | Type | Description |
-| --- | --- | --- |
-| payeesIdAddress | string\[\] | ID address of the payee \([see step in Preconfiguration](online-payments.md#create-an-account-to-store-your-identity)\). Additional payees can be added in the array. Position 0 is the main payee \(the one who sign the request\). |
-| expectedAmounts | number\[\] | Amount in Wei of the payment Request for each payee. \(1Eth = 1000000000000000000 Wei\) |
-| expirationDate | number | Timestamp in seconds of the date after which the signed request can not be paid anymore. We recommend to set:  `new Date().getTime() + 3600` |
-| payeesPaymentAddress | string\[\] \(optional\) | Address on which to receive the payment \([see step in Preconfiguration](online-payments.md#create-a-wallet-to-store-your-currencies)\) for each payee |
-| metadata | String \(optional\) | Json string of the request's details \(data will be hosted on ipfs\). See below for more information |
+Parameter | Type | Description
+--------- | ---- | -----------
+as | Types.Role | Who is creating the Request (only Payee is implemented for now).
+currency | Types.Currency | Currency of the Request (ETH, BTC, REQ, etc.).
+payees | Types.IPayee[] | Array of payees (see below for IPayee details).
+expirationDate | number | Timestamp in second of the date after which the signed request is not broadcastable anymore.
+requestOptions | Types.IRequestCreationOptions | Request creation options. Includes request data, extension and ethereum transaction options.
 
-#### c. Other currencies \(available soon\)
+**IPayee** is an object containing all the payment information, containing the following parameters:
 
-#### d. Store metadata
+Parameter | Type | Description
+--------- | ---- | -----------
+idAddress | string | ID address of the payee ([see step in Preconfiguration](#create-an-account-to-store-your-identity)).
+paymentAddress | string| Address on which to receive the payment ([see step in Preconfiguration](#create-a-wallet-to-store-your-currencies)).
+expectedAmount | number | Amount in Wei of the payment Request. (1Eth = 1000000000000000000 Wei).
+
+#### c. Store metadata
 
 Request Network supports adding metadata to every request.
 
@@ -178,7 +180,7 @@ Privacy: The metadata are public as of today. You will be able to select the pri
 
 Accounting: Accounting standardized data will be specified during the first beta phase.
 
-We use the following format `metadata = { reason: String, orderId: String }`
+We use the following format `data = { reason: String, orderId: String }`, as a parameter of **requestOptions** when creating the signedRequest.
 
 ### 2. Add a payment button on your front-end and redirect the user to the gateway
 
@@ -225,9 +227,9 @@ In order to ease the process for integrating a pay-with-request button on your w
 > Example for redirectiong to the gateway with right parameters:
 
 ```javascript
-var qs = JSON.stringify({signedRequest: signedRequest, callbackUrl: myCallbackUrl, networkId: 1}));
-var qsBase64 = btoa(qs);
-var qsb64Encoded = encodeURIComponent(qsBase64);
+const qs = JSON.stringify({signedRequest: signedRequest.signedRequestData, callbackUrl: myCallbackUrl, networkId: 1}));
+const qsBase64 = btoa(qs);
+const qsb64Encoded = encodeURIComponent(qsBase64);
 document.location.href = 'https://app.request.network/#/pay-with-request/' + qsb64Encoded;
 ```
 
@@ -275,8 +277,8 @@ You can view your payments at this URL, replacing the address with your own ID a
 
 ```javascript
  try {
-      var txHash = 0xb8e90ba15bb09d1b5baba628fcc01d0302d8d47dc854e85e6deeb5c60f6d3f2b;
-      var result = await requestnetwork.requestCoreService.getRequestByTransactionHash(txHash);
+      const txHash = 0xb8e90ba15bb09d1b5baba628fcc01d0302d8d47dc854e85e6deeb5c60f6d3f2b;
+      const result = await requestnetwork.requestCoreService.getRequestByTransactionHash(txHash);
     } catch (err) {
       console.error(err);
     }
@@ -348,9 +350,9 @@ Transaction information may not appear instantly after user paid the request and
 
 Once you receive the **transaction** object, you need to check some parameters to ensure it actually corresponds to the broadcast of a request payment transaction.
 
-* First one is verifying the name of the method called is "broadcastSignedRequestAsPayer":
+* The first one is verifying the name of the method called is "broadcastSignedRequestAsPayer" or "broadcastSignedRequestAsPayerAction" (for ERC20 requests):
 
-`transaction.method.name == 'broadcastSignedRequestAsPayer'`
+`transaction.method.name === 'broadcastSignedRequestAsPayer' || transaction.method.name === 'broadcastSignedRequestAsPayerAction'`
 
 > Example for getting additionnal info of the transaction:
 
@@ -381,7 +383,8 @@ For that you need to call an additionnal method:
 
 | Parameter | Type | Description |
 | --- | --- | --- |
-| requestData | string | request data bytes \(variable found in transaction json object above `transaction.method.parameters._requestData`\) |
+| requestData | string | request data bytes \(
+iable found in transaction json object above `transaction.method.parameters._requestData`\) |
 
 From that point if you stored the signed request information on a database, you just need to verify that transaction.method.parameters.\_signature matches a known signature
 
