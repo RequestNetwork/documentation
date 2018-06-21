@@ -1,9 +1,3 @@
----
-description: >-
-  Security is a top priority for Request Network. To make sure everything stays
-  secure we have a Bug Bounty.
----
-
 # Bug bounty
 
 ![](.gitbook/assets/bugbounty.png)

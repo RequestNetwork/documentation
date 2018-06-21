@@ -1,7 +1,3 @@
----
-description: Track Request Network development progression in real-time
----
-
 # Roadmap
 
 _From Solid to Fluid, we’ve melted the roadmap. You can now track what we’re working on at the Request Network Foundation in real-time, at any time. This gives you the ability to discover our priorities of the past, today and the future with information that is accurate and open for all. The new roadmap will be dynamic, meaning it will keep changing based on learnings from the team and blockchain ecosystem as a whole._ 

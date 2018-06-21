@@ -1,10 +1,3 @@
----
-description: >-
-  This page lists all current projects that are using the Request Network. If
-  you are missing a project here, edit this page on Github and submit a pull
-  request to add your project in the list below.
----
-
 # Integrations
 
 Currently live projects using Request:

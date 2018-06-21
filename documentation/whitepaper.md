@@ -1,9 +1,3 @@
----
-description: >-
-  The Request Network Whitepaper is currently available in eleven different
-  languages, listed below.
----
-
 # Whitepaper
 
 [**English**](https://request.network/assets/pdf/request_whitepaper.pdf)

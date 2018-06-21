@@ -152,25 +152,25 @@ const signedRequest = await requestnetwork.requestEthereumService.signRequestAsP
 }
 ```
 
-Now we need to ask the library to create a request for payment. 
+Now we need to ask the library to create a request for payment.
 
-**`async requestNetwork.createSignedRequest(as, currency, payees, expirationDate, requestOptions)`** (see example)
+`async requestNetwork.createSignedRequest(as, currency, payees, expirationDate, requestOptions)` \(see example\)
 
-Parameter | Type | Description
---------- | ---- | -----------
-as | Types.Role | Who is creating the Request (only Payee is implemented for now).
-currency | Types.Currency | Currency of the Request (ETH, BTC, REQ, etc.).
-payees | Types.IPayee[] | Array of payees (see below for IPayee details).
-expirationDate | number | Timestamp in second of the date after which the signed request is not broadcastable anymore.
-requestOptions | Types.IRequestCreationOptions | Request creation options. Includes request data, extension and ethereum transaction options.
+| Parameter | Type | Description |
+| --- | --- | --- |
+| as | Types.Role | Who is creating the Request \(only Payee is implemented for now\). |
+| currency | Types.Currency | Currency of the Request \(ETH, BTC, REQ, etc.\). |
+| payees | Types.IPayee\[\] | Array of payees \(see below for IPayee details\). |
+| expirationDate | number | Timestamp in second of the date after which the signed request is not broadcastable anymore. |
+| requestOptions | Types.IRequestCreationOptions | Request creation options. Includes request data, extension and ethereum transaction options. |
 
 **IPayee** is an object containing all the payment information, containing the following parameters:
 
-Parameter | Type | Description
---------- | ---- | -----------
-idAddress | string | ID address of the payee ([see step in Preconfiguration](#create-an-account-to-store-your-identity)).
-paymentAddress | string| Address on which to receive the payment ([see step in Preconfiguration](#create-a-wallet-to-store-your-currencies)).
-expectedAmount | number | Amount in Wei of the payment Request. (1Eth = 1000000000000000000 Wei).
+| Parameter | Type | Description |
+| --- | --- | --- |
+| idAddress | string | ID address of the payee \([see step in Preconfiguration](online-payments.md#create-an-account-to-store-your-identity)\). |
+| paymentAddress | string | Address on which to receive the payment \([see step in Preconfiguration](online-payments.md#create-a-wallet-to-store-your-currencies)\). |
+| expectedAmount | number | Amount in Wei of the payment Request. \(1Eth = 1000000000000000000 Wei\). |
 
 #### c. Store metadata
 
@@ -350,7 +350,7 @@ Transaction information may not appear instantly after user paid the request and
 
 Once you receive the **transaction** object, you need to check some parameters to ensure it actually corresponds to the broadcast of a request payment transaction.
 
-* The first one is verifying the name of the method called is "broadcastSignedRequestAsPayer" or "broadcastSignedRequestAsPayerAction" (for ERC20 requests):
+* The first one is verifying the name of the method called is "broadcastSignedRequestAsPayer" or "broadcastSignedRequestAsPayerAction" \(for ERC20 requests\):
 
 `transaction.method.name === 'broadcastSignedRequestAsPayer' || transaction.method.name === 'broadcastSignedRequestAsPayerAction'`
 
@@ -383,8 +383,9 @@ For that you need to call an additionnal method:
 
 | Parameter | Type | Description |
 | --- | --- | --- |
-| requestData | string | request data bytes \(
-iable found in transaction json object above `transaction.method.parameters._requestData`\) |
+| requestData | string | request data bytes \( |
+
+iable found in transaction json object above `transaction.method.parameters._requestData`\) \|
 
 From that point if you stored the signed request information on a database, you just need to verify that transaction.method.parameters.\_signature matches a known signature
 
