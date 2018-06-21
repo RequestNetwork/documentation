@@ -21,6 +21,5 @@
   * [Whitepaper](documentation/whitepaper.md)
   * [Smart Audits Yellowpaper](https://request.network/assets/pdf/request_yellowpaper_smart_audits.pdf)
   * [Tech Ecosystem Mindmap](https://www.mindmeister.com/991002501)
-  * [Business Development Mindmap](https://www.mindmeister.com/1015399217)
 * [Roadmap](roadmap.md)
 
