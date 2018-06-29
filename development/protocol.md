@@ -19,12 +19,12 @@ There are 3 types of smart contracts within the Request Network:
 
 A request has these Properties:
 
-* **Payee**
-* **Payer**
-* **ExpectedAmount**, the amount to pay
-* **Balance**, the amount payed at a given moment
+* **Payee**, identity of the main payee
+* **SubPayees**, identities of other payees (used in the case of multiple payees)
+* **Payer**, identity of the payer
+* **ExpectedAmount**, the amount to pay per payees
+* **Balance**, the amount payed at a given moment per payees
 * **State**, see below
-* **SubPayees**, used in the case of multiple payees
 
 A request can be in one of these States:
 
@@ -37,6 +37,7 @@ A request supports these Actions:
 * **Create** a request
 * **Sign** a request. It creates a request offline to send to a payer, but doesn't broadcast it
 * **Pay** a request, partially or entirely
+* **Refund** a request, partially or entirely
 * **Add an additional**. For example, to add tips
 * **Add a subtract**. For example, refunds and discounts
 * **Accept** a request. It is useful to recognize an invoice which have a later due date. It is not mandatory to accept a request to pay it
