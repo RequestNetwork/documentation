@@ -1,6 +1,6 @@
 # Roadmap
 
-![Click to zoom in](.gitbook/assets/roadmap_master_file%20%281%29.png)
+![Click to zoom in](../.gitbook/assets/roadmap_master_file%20%281%29.png)
 
 **How our roadmap flow works**
 

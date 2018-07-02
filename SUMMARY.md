@@ -21,5 +21,8 @@
   * [Whitepaper](documentation/whitepaper.md)
   * [Smart Audits Yellowpaper](https://request.network/assets/pdf/request_yellowpaper_smart_audits.pdf)
   * [Tech Ecosystem Mindmap](https://www.mindmeister.com/991002501)
-* [Roadmap](roadmap.md)
+* [Roadmap](roadmap/README.md)
+  * [Protocol Development](roadmap/protocol-development/README.md)
+    * [In Progress](roadmap/protocol-development/in-progress.md)
+    * [Up Next](roadmap/protocol-development/up-next.md)
 
