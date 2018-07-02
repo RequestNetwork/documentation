@@ -1,6 +1,6 @@
 ---
 description: >-
-  Below are details on goals that are currently being worked on by the protocol
+  Details on goals that are currently being worked on by the protocol
   development team.
 ---
 
