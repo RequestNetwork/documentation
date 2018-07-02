@@ -1,7 +1,5 @@
 ---
-description: >-
-  Below are details on goals that will be picked up next by the protocol
-  development team.
+description: Details on goals that will be picked up next by the protocol development team.
 ---
 
 # Up Next
