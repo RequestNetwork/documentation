@@ -20,7 +20,7 @@ There are 3 types of smart contracts within the Request Network:
 A request has these Properties:
 
 * **Payee**, identity of the main payee
-* **SubPayees**, identities of other payees (used in the case of multiple payees)
+* **SubPayees**, identities of other payees \(used in the case of multiple payees\)
 * **Payer**, identity of the payer
 * **ExpectedAmount**, the amount to pay per payees
 * **Balance**, the amount payed at a given moment per payees
