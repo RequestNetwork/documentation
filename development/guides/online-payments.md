@@ -135,20 +135,23 @@ const signedRequest = await requestnetwork.requestEthereumService.signRequestAsP
 
 ```javascript
 {
-  "currencyContract": "0xafa312973909c3a541665e11c883a24a8eb10b2c",
-  "data": "QmSsrdAPhD5UkRVDKVpCwf63nrUxBaNbYmpZ2njbku9Mi5",
-  "expectedAmounts": [
-    "175000000000000000"
-  ],
-  "expirationDate": 1522207081496,
-  "hash": "0x0071762fae039b38da6c0685172c2de8df98eed1cbfc7b709bbe23df51c16fb3",
-  "payeesIdAddress": [
-    "0x8F0255e24B99825e9AD4bb7506678F18C630453F"
-  ],
-  "payeesPaymentAddress": [
-    "0xf9DF490146b29418a59F43dDb4Afc57Cd3fEf856"
-  ],
-  "signature": "0x4708d801416d8ee4604af4bf8b3a2328592ab450d6a48c0d66446e26b51066cb2d2c568d37c38ae1bc3b48f1582e24b9c8b63bac9c548d8754f5d50b33e5fb491c"
+  "signedRequestData": {
+    "currencyContract": "0xe241d3757dad0ef86d0fcc5fe90e20f955743ed5",
+    "data": "QmSsrdAPhD5UkRVDKVpCwf63nrUxBaNbYmpZ2njbku9Mi5",
+    "expectedAmounts": [
+      "175000000000000000"
+    ],
+    "expirationDate": 1529315288204,
+    "hash": "0x763ba38dca436907e0a34233a8ecc7568c0295ea03f144455defaa4e24f858ab",
+    "payeesIdAddress": [
+      "0x8F0255e24B99825e9AD4bb7506678F18C630453F"
+    ],
+    "payeesPaymentAddress": [
+      "0xf9DF490146b29418a59F43dDb4Afc57Cd3fEf856"
+    ],
+    "signature": "0xf9a5218d6a6baa8415d35ba6fe171a034fd9da8f5f458a01a2858ac5333e752813e7786fd1d57e5e81de4db493ee00ec0ef85e2863c6b7671f9df34be5eb86831c"
+  },
+  "currency": 2
 }
 ```
 
@@ -239,7 +242,7 @@ where `qsBase64` is a base 64 encoded string of a JSON object containing the fol
 
 | Parameter | Type | Description |
 | --- | --- | --- |
-| signedRequest | object | signed request object \(see paragraph above for format\) |
+signedRequest | object | signedRequestData pamareter from  the signedRequest object returned from requestnetwork.createSignedRequest method (see paragraph above for format).
 | callbackUrl | string | url for the gateway to redirect after request has been paid |
 | networkId | string | id of the network on which you signed the request \([see step 1.](online-payments.md#1-create-a-request-for-payment-on-your-back-end)\) |
 
