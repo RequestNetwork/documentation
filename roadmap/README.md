@@ -8,8 +8,8 @@ To keep progression tracking as simple as possible for you, we’ve divided our 
 
 This makes it possible to quickly discover the latest progress that is being made in real-time. When one or multiple goals are reached, they will move from in-progress towards completed, contributing to the historical roadmap of the Request Network. A new \(set of\) goal\(s\) from the ‘Up Next’ section will simultaneously shift to in-progress, which the team will then spend their resources on. This way we can keep \(re-\)prioritizing goals to work on next, making the foundation a lot more agile on leading the way to a universal financial application ecosystem while giving you the most accurate state of development.
 
-**Protocol Development  
-Thematic goal:** _Create an open-source and interoperable financial application blockchain protocol, to be taken advantage of by app developers without permission_
+[**Protocol Development**  
+](https://docs.request.network/roadmap/protocol-development)**Thematic goal:** _Create an open-source and interoperable financial application blockchain protocol, to be taken advantage of by app developers without permission_
 
 The Protocol Development theme will track all development that is currently in-progress \(or has been delivered\) contributing directly to the protocol of the Request Network. The Request Network protocol will serve as the engine on which the Request Network applications will run. It gives app developers all the decentralized tools needed to build their own financial application without third party permission.  
    
