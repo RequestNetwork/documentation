@@ -242,9 +242,9 @@ where `qsBase64` is a base 64 encoded string of a JSON object containing the fol
 
 | Parameter | Type | Description |
 | --- | --- | --- |
-signedRequest | object | signedRequestData pamareter from  the signedRequest object returned from requestnetwork.createSignedRequest method (see paragraph above for format).
-| callbackUrl | string | url for the gateway to redirect after request has been paid |
-| networkId | string | id of the network on which you signed the request \([see step 1.](online-payments.md#1-create-a-request-for-payment-on-your-back-end)\) |
+
+
+signedRequest \| object \| signedRequestData pamareter from the signedRequest object returned from requestnetwork.createSignedRequest method \(see paragraph above for format\). \| callbackUrl \| string \| url for the gateway to redirect after request has been paid \| \| networkId \| string \| id of the network on which you signed the request \([see step 1.](online-payments.md#1-create-a-request-for-payment-on-your-back-end)\) \|
 
 ### Paying on the gateway
 

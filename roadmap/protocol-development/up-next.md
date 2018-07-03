@@ -1,7 +1,3 @@
----
-description: Details on goals that will be picked up next by the protocol development team.
----
-
 # Up Next
 
 ### Extensibility and advanced payment conditions extension

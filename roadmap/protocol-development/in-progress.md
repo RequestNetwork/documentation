@@ -1,9 +1,3 @@
----
-description: >-
-  Details on goals that are currently being worked on by the protocol
-  development team.
----
-
 # In Progress
 
 ### **Scaling solution**
