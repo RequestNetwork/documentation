@@ -89,7 +89,7 @@ The parameter for the constructor \(all optional\) are
 
 ```javascript
 const { request } = await requestNetwork.createRequest(
-    role,
+    Types.Role.Payee,
     Types.Currency.ETH,
     [{
         idAddress: '0xc157274276a4e59974cca11b590b9447b26a8051',
@@ -118,7 +118,31 @@ const request = await requestNetwork.fromRequestId(requestId);
 await request.pay([web3.utils.toWei('1.5', 'ether')]);
 ```
 
-For example for Requests in ETH, the amounts are in wei. An amount of 100 will be 100 wei. An amount of 0.1 will be rounded down to 0 wei.
+For example for Requests in ETH, the amounts are in [wei](http://ethdocs.org/en/latest/ether.html). An amount of 100 will be 100 wei. An amount of 0.1 will be rounded down to 0 wei.
+
+### Create and Pay a Request
+
+Payers can create and pay a request at once:
+
+```javascript
+const { request } = await requestNetwork.createRequest(
+    Types.Role.Payee,
+    Types.Currency.ETH,
+    [{
+        idAddress: '0xc157274276a4e59974cca11b590b9447b26a8051',
+        paymentAddress: '0xc157274276a4e59974cca11b590b9447b26a8051',
+        additional: 5,
+        expectedAmount: 100,
+        amountToPayAtCreation: 100,
+    }],
+    {
+        idAddress: '0x014fcc05c76687456e569561ae9956c0ec0ec223',
+        refundAddress: '0x014fcc05c76687456e569561ae9956c0ec0ec223',
+    }
+);
+```
+
+Note the `amountToPayAtCreation` property in the array of payees.
 
 ### Get information about a request
 
