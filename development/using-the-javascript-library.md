@@ -159,6 +159,8 @@ Other data of a request \(like payer, payee, balance\) should be retrieved with 
 await request.getData();
 ```
 
+A request should be considered paid when the balance is greater or equal to the expected amount.
+
 ### Increase the expected payment amounts \(ex: tips\)
 
 ```javascript
