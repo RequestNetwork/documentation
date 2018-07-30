@@ -38,8 +38,8 @@ A request supports these Actions:
 * **Sign** a request. It creates a request offline to send to a payer, but doesn't broadcast it
 * **Pay** a request, partially or entirely
 * **Refund** a request, partially or entirely
-* **Add an additional**. For example, to add tips
-* **Add a subtract**. For example, refunds and discounts
+* **Increase the expected amounts**. For example, to add tips
+* **Decrease the expected amounts**. For example, refunds and discounts
 * **Accept** a request. It is useful to recognize an invoice which have a later due date. It is not mandatory to accept a request to pay it
 * **Cancel** a request
 

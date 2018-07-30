@@ -159,16 +159,16 @@ Other data of a request \(like payer, payee, balance\) should be retrieved with 
 await request.getData();
 ```
 
-### Add additionals \(ex: tips\)
+### Increase the expected payment amounts \(ex: tips\)
 
 ```javascript
-await request.addAdditionals([web3.utils.toWei('.05', 'ether')]);
+await request.increaseExpectedAmounts([web3.utils.toWei('.05', 'ether')]);
 ```
 
-### Add subtractions \(ex: discounts\)
+### Reduce the expected payment amounts \(ex: discounts\)
 
 ```javascript
-await request.addSubtractions([web3.utils.toWei('.05', 'ether')]);
+await request.reduceExpectedAmounts([web3.utils.toWei('.05', 'ether')]);
 ```
 
 ### Refund a Request
