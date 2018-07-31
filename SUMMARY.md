@@ -27,6 +27,7 @@
     * [Up Next](roadmap/protocol-development/up-next.md)
 * [Join the Request Foundation Team](join-request/README.md)
   * [Job Offers](join-request/job-offers/README.md)
+    * [Growth Marketer](join-request/job-offers/growth-marketer.md)
     * [Product Manager](join-request/job-offers/product-manager.md)
     * [Back-end Developer](join-request/job-offers/back-end-developer.md)
     * [Full-stack Developer with Front-end Focus](join-request/job-offers/full-stack-developer-with-front-end-focus.md)
