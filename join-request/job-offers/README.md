@@ -8,6 +8,7 @@ We currently have these positions open at the Request Foundation. If there is no
 
 * [Growth Marketer](https://docs.request.network/join-request/job-offers/growth-marketer)
 * [Product Manager](https://docs.request.network/join-request/job-offers/product-manager)
+* [HR Manager](https://docs.request.network/join-request/job-offers/hr-manager)
 * [Back-end Developer](https://docs.request.network/join-request/job-offers/back-end-developer)
 * [Full-stack Developer ](https://docs.request.network/join-request/job-offers/full-stack-developer-with-front-end-focus)
 
