@@ -30,7 +30,7 @@ A request can be in one of these States:
 
 * **Created**
 * **Accepted**
-* **Cancelled**
+* **Canceled**
 
 A request supports these Actions:
 
@@ -38,8 +38,8 @@ A request supports these Actions:
 * **Sign** a request. It creates a request offline to send to a payer, but doesn't broadcast it
 * **Pay** a request, partially or entirely
 * **Refund** a request, partially or entirely
-* **Increase the expected amounts**. For example, to add tips
-* **Decrease the expected amounts**. For example, refunds and discounts
+* **Add an additional**. For example, to add tips
+* **Add a subtract**. For example, refunds and discounts
 * **Accept** a request. It is useful to recognize an invoice which have a later due date. It is not mandatory to accept a request to pay it
 * **Cancel** a request
 
@@ -49,9 +49,7 @@ When the payer cancels a request, it is assimilated to a declined invoice. We wi
 
 ## ECDSA Request: how to sign a request and let the user broadcast it \(for online payments, Points of Sale...\)
 
-When dealing with B2B invoices, you especially need to broadcast your transaction on the blockchain so that your client can detect it automatically. But when you are at a Point of Sale or online, the vendor doesn’t need to broadcast the invoice on the blockchain. If he would do so, he would have to wait for blockchain confirmation and it would add a gas cost.
-
-The solution to bypass the invoice broadcasting is to work on an ECDSA optimization where the seller encrypts his transaction, provides it to the client who accepts the invoice, pays it and broadcasts it in a single transaction. Most blockchain systems \(including Ethereum and Bitcoin\) use the Elliptic Curve Digital Signature Algorithm \(ECDSA\) for cryptographically signing transactions. We use it to prove that the sender of the transaction had access to a private key and that the transaction has not been changed since it was signed.
+Please read: [https://docs.request.network/development/guides/signed-request](https://docs.request.network/development/guides/signed-request)
 
 ## Financial flow: how to handle data to manage invoices, salaries, etc. - _Available soon_
 

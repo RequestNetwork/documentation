@@ -100,7 +100,7 @@ In this guide we use **truffle-hdwallet-provider** which instantiates a Web3 pro
 `new HDWalletProvider(mnemonic, provider_uri, index)` \(see example\)
 
 | Parameter | Type | Description |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | mnemonic | string | 12 word mnemonic which addresses are created from. |
 | provider\_uri | number | URI of Ethereum client to send all Web3 requests. |
 | index | number \(optional\) | If specified, will tell the provider to manage the address at the index specified. Defaults to the first address \(index 0\). |
@@ -110,7 +110,7 @@ By default, the HDWalletProvider will use the address of the first address that'
 `new RequestNetwork(provider, network_id)` \(see example\)
 
 | Parameter | Type | Description |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | provider | object | Web3 Provider for the library to use. |
 | networkId | number | network id you're using, **must match the network of the provider's Ethereum client**. |
 
@@ -160,7 +160,7 @@ Now we need to ask the library to create a request for payment.
 `async requestNetwork.createSignedRequest(as, currency, payees, expirationDate, requestOptions)` \(see example\)
 
 | Parameter | Type | Description |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | as | Types.Role | Who is creating the Request \(only Payee is implemented for now\). |
 | currency | Types.Currency | Currency of the Request \(ETH, BTC, REQ, etc.\). |
 | payees | Types.IPayee\[\] | Array of payees \(see below for IPayee details\). |
@@ -170,7 +170,7 @@ Now we need to ask the library to create a request for payment.
 **IPayee** is an object containing all the payment information, containing the following parameters:
 
 | Parameter | Type | Description |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | idAddress | string | ID address of the payee \([see step in Preconfiguration](online-payments.md#create-an-account-to-store-your-identity)\). |
 | paymentAddress | string | Address on which to receive the payment \([see step in Preconfiguration](online-payments.md#create-a-wallet-to-store-your-currencies)\). |
 | expectedAmount | number | Amount in Wei of the payment Request. \(1Eth = 1000000000000000000 Wei\). |
@@ -241,7 +241,7 @@ The gateway url is `https://app.request.network/#/pay-with-request/<qsBase64>`
 where `qsBase64` is a base 64 encoded string of a JSON object containing the following **mandatory** parameters
 
 | Parameter | Type | Description |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 
 
 signedRequest \| object \| signedRequestData pamareter from the signedRequest object returned from requestnetwork.createSignedRequest method \(see paragraph above for format\). \| callbackUrl \| string \| url for the gateway to redirect after request has been paid \| \| networkId \| string \| id of the network on which you signed the request \([see step 1.](online-payments.md#1-create-a-request-for-payment-on-your-back-end)\) \|
@@ -344,7 +344,7 @@ If you need to reconcile the payment with your own system, the library provides 
 `async requestnetwork.requestCoreService.getRequestByTransactionHash(txHash)`
 
 | Parameter | Type | Description |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | txHash | string | hash of the ethereum transaction |
 
 Transaction information may not appear instantly after user paid the request and got redirected to the callbackUrl. Also you will have to call the method getRequestByTransactionHash until you receive a response with the transaction data.
@@ -385,7 +385,7 @@ For that you need to call an additionnal method:
 `requestnetwork.requestCoreService.parseBytesRequest(requestData)`
 
 | Parameter | Type | Description |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | requestData | string | request data bytes \( |
 
 iable found in transaction json object above `transaction.method.parameters._requestData`\) \|
