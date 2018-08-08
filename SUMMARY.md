@@ -15,6 +15,7 @@
     * [Smart Contracts](https://docs-smart-contracts.request.network/)
     * [Javascript Library](https://docs-js-lib.request.network/)
 * [Bug bounty](bug-bounty.md)
+* [Request Fund](request-fund.md)
 * [Design](design.md)
 * [Integrations](integrations.md)
 * [Documentation](documentation/README.md)
@@ -34,5 +35,4 @@
     * [Full-stack Developer with Front-end Focus](join-request/job-offers/full-stack-developer-with-front-end-focus.md)
   * [Company Culture](join-request/company-culture.md)
   * [Open Application](join-request/open-application.md)
-* [Request Fund](request-fund.md)
 
