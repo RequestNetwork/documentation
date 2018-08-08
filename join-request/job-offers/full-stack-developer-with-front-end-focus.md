@@ -21,6 +21,10 @@ You will join the Request Network Foundation team which is part of the YCombinat
 * Experience with modern web development \(responsive design with HTML/CSS, ES6, React/ Angular/Node.js, etc.\). Knowledge of web3.js library is a plus
 * _Optional: You have the skills to recreate the Rick and Morty Portal Gun and an opinion on how to avoid being trapped into one of the Black Mirror scenarios of the future_
 
+### Location {#location}
+
+This role is based in Amsterdam. Remote work will be partially possible after a while.
+
 ### Want to join?
 
 Are you convinced this job is for you? Send in your resume and motivation to [join@request.network ](mailto:join@request.network)and we will contact you as soon as possible.  
