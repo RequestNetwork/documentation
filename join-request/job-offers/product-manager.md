@@ -22,6 +22,10 @@ We are looking for a product manager who has a strong interest in managing block
 * Deep understanding of go-to-market commerce enablers \(e.g. payments, loyalty, subscriptions, etc.\)
 * Strong written, verbal and collaboration skills
 
+### Location {#location}
+
+This role is based in Amsterdam. Remote work will be partially possible after a while.
+
 ### Want to join?
 
 Are you convinced this job is for you? Send in your resume and motivation to [join@request.network ](mailto:join@request.network)and we will contact you as soon as possible.
