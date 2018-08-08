@@ -4,7 +4,7 @@ Our **goal** is to scale the Request Network Project in a decentralized way and 
 
 We’re looking for passionate people and teams who are willing to join forces to build out Request more efficiently. There are many other projects Request Network could support, we will thus update the list over time.
 
-**Request Network allocated $30 million \(in REQ & ETH\) over the next 5 years to the Request Fund.**
+**The Request Network Foundation allocated $30 million \(in REQ & ETH\) over the next 5 years to the Request Fund.**
 
 Amounts: up to $100k per project, paid out when pre-defined milestones are reached. Grants might increase for highly successful projects. These grants are intended to cover some of the costs involved so that anyone can build on top of Request.
 
