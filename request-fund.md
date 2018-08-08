@@ -6,7 +6,7 @@ We’re looking for passionate people and teams who are willing to join forces t
 
 **Request Network allocated $30 million \(in REQ & ETH\) over the next 5 years to the Request Fund.**
 
-Amounts: $20k to $100k per project, paid out when pre-defined milestones are reached. Grants might increase for highly successful projects. These grants are intended to cover some of the costs involved so that anyone can build on top of Request.
+Amounts: up to $100k per project, paid out when pre-defined milestones are reached. Grants might increase for highly successful projects. These grants are intended to cover some of the costs involved so that anyone can build on top of Request.
 
 Here is a first list of project ideas we would be keen to fund:
 
