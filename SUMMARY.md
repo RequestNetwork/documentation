@@ -34,6 +34,7 @@
     * [HR Manager](join-request/job-offers/hr-manager.md)
     * [Back-end Developer](join-request/job-offers/back-end-developer.md)
     * [Full-stack Developer with Front-end Focus](join-request/job-offers/full-stack-developer-with-front-end-focus.md)
+    * [Communication & PR Manager](join-request/job-offers/communication-and-pr-manager.md)
   * [Company Culture](join-request/company-culture.md)
   * [Open Application](join-request/open-application.md)
 
