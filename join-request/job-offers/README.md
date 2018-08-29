@@ -11,6 +11,7 @@ We currently have these positions open at the Request Foundation. If there is no
 * [HR Manager](https://docs.request.network/join-request/job-offers/hr-manager)
 * [Back-end Developer](https://docs.request.network/join-request/job-offers/back-end-developer)
 * [Full-stack Developer ](https://docs.request.network/join-request/job-offers/full-stack-developer-with-front-end-focus)
+* [Communication & PR Manager](https://docs.request.network/join-request/job-offers/communication-and-pr-manager)
 
 
 
