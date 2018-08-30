@@ -47,7 +47,7 @@ We are looking for a Communication & PR manager who has a strong interest to gro
 * Work in an informal and friendly environment that is very open for new initiatives and ideas;
 * The team is inclusive, with inspirational and international colleagues that like to participate in team events;
 * You have input in the Amsterdam Spotify playlist;
-* Ride your Request bicycle around Amsterdam to stay efficient and healthy.
+* Ride a Request bicycle around Amsterdam to stay efficient and healthy.
 
 ### **More about us:**
 
