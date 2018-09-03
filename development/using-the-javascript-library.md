@@ -82,6 +82,7 @@ The parameter for the constructor \(all optional\) are
 * ethNetworkId: the Ethereum network ID \(1: main, 2: morden, 3: ropsen, 4: rinkeby, 42: kovan, other: private\)
 * bitoinNetworkId: the Bitcoin network ID
 * useIpfsPublic: false to use a private ipfs network
+* ipfsCustomNode: define a custom ipfs node like {host, port, protocol}, if given with useIpfsPublic will throw an error
 
 ## Features
 
