@@ -105,7 +105,9 @@ const { request } = await requestNetwork.createRequest(
 );
 ```
 
-Use the currency parameter to choose the currency of the request. Note that in local and rinkeby, REQ is the only ERC20 available.
+Use the currency parameter to choose the currency of the request. 
+
+Note: in local and rinkeby, REQ is the only ERC20 available. \(see [how to get test token on rinkeby](https://docs.request.network/development/using-the-javascript-library#get-erc20-test-token-on-rinkeby)\)
 
 ### Retrieve a Request from its ID
 
@@ -120,6 +122,8 @@ await request.pay([web3.utils.toWei('1.5', 'ether')]);
 ```
 
 For example for Requests in ETH, the amounts are in [wei](http://ethdocs.org/en/latest/ether.html). An amount of 100 will be 100 wei. An amount of 0.1 will be rounded down to 0 wei.
+
+Note: the payment with ERC20 require an allowance \(see [payment with ERC20](https://docs.request.network/development/using-the-javascript-library#payment-with-erc20)\)
 
 ### Create and Pay a Request
 
@@ -144,6 +148,8 @@ const { request } = await requestNetwork.createRequest(
 ```
 
 Note the `amountToPayAtCreation` property in the array of payees.
+
+Note: the payment with ERC20 require an allowance \(see [payment with ERC20](https://docs.request.network/development/using-the-javascript-library#payment-with-erc20)\)
 
 ### Get information about a request
 
@@ -235,6 +241,24 @@ The payer is necessary to validate the signed request
 await request.pay([web3.utils.toWei('1.5', 'ether')]).on('broadcasted', () => {});
 ```
 
+### Payment with ERC20
+
+To pay a ERC20 request, the payer needs to authorize the request smart contract to make a token transfer on their behalf. It's called an allowance, see [https://tokenallowance.io/](https://tokenallowance.io/) for more information.
+
+To do this allowance, you can use one of the two methods offered by the library:
+
+```javascript
+// make an allowance for a request from requestId
+await requestNetwork.requestERC20Service.approveTokenForRequest(requestId, 1000000);
+
+// make an alowance for a signed request
+await requestNetwork.requestERC20Service.approveTokenForSignedRequest(signedRequest, 1000000);
+```
+
+### Get ERC20 test token on rinkeby
+
+On rinkeby, we use a special token to emulate the REQ token: the [Central Bank Token \(CTBK\)](https://rinkeby.etherscan.io/token/0x995d6a8c21f24be1dd04e105dd0d83758343e258). You can get some by calling the function `mint()`. Then you can test the ERC20 requests on Rinkeby using the currency REQ.
+
 ## Accessing the internal services
 
 For advanced use, it is possible to access the internal layers of the library:
@@ -243,4 +267,6 @@ For advanced use, it is possible to access the internal layers of the library:
 const requestNetwork = new RequestNetwork();
 await requestNetwork.requestEthereumService.accept(requestId);
 ```
+
+
 
