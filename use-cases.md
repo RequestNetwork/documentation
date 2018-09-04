@@ -15,15 +15,11 @@ Most of the invoices we pay are email or paper-based. In a digital world, this m
 
 There are strong opportunities to improve invoicing by:
 
-- Reducing cost by having the detection of payments happen on the blockchain through the Request Network.
-
-- Making it easy to detect incoming invoices by using the Request Network as an interoperable invoice layer \(i.e. one application creates an invoice, a different app can detect an incoming invoice and pay it\)
-
-- Supporting cryptocurrency invoices
-
-- Transforming invoices into smart invoices \(programmable\) and allow the use of escrow or advanced payment conditions.
-
-- Improving data privacy by letting users encrypt their invoices end-to-end.
+* Reducing cost by having the detection of payments happen on the blockchain through the Request Network.
+* Making it easy to detect incoming invoices by using the Request Network as an interoperable invoice layer \(i.e. one application creates an invoice, a different app can detect an incoming invoice and pay it\)
+* Supporting cryptocurrency invoices
+* Transforming invoices into smart invoices \(programmable\) and allow the use of escrow or advanced payment conditions.
+* Improving data privacy by letting users encrypt their invoices end-to-end.
 
 ### **Online payments and gateways**
 
@@ -43,9 +39,10 @@ By plugging your system to the Request Network, you'll be able to access the fin
 
 ### **Financial Audit**
 
-The combined revenue of the Big Four \(Ernst & Young, KPMG. Deloitte and PwC\) amounted to more than 134 billion U.S. dollars in 2017. The automation of accounting will make the activity of audit firms evolve in two ways:  
-- The blockchain technology will enable analysis of exhaustive databases instead of proceeding by sampling.  
-- The added value of audit experts will shift from transaction analysis to strategic consulting and advising. 
+The combined revenue of the Big Four \(Ernst & Young, KPMG. Deloitte and PwC\) amounted to more than 134 billion U.S. dollars in 2017. The automation of accounting will make the activity of audit firms evolve in two ways:
+
+* The blockchain technology will enable analysis of exhaustive databases instead of proceeding by sampling.
+* The added value of audit experts will shift from transaction analysis to strategic consulting and advising. 
 
 In addition, we expect Blockchain databases to grow into one of the largest datasets of financial data available within the next 5 years.
 
