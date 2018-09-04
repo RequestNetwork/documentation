@@ -1,7 +1,5 @@
 # Building with Request
 
-## **Request Network - Build with Request**
-
 This is a regularly updated list of ideas for applications that can be built on top of the Request Network.
 
 There are many outside the box ideas that we have not thought about yet ourselves. Feel free to surprise us!
