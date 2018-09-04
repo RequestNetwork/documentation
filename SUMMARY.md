@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Use cases](use-cases.md)
+* [Building with Request](use-cases.md)
 * [Development](development/README.md)
   * [Protocol](development/protocol.md)
   * [Getting started](development/getting-started.md)
