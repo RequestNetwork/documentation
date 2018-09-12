@@ -16,7 +16,7 @@ You will join the Request Network Foundation team, and specifically the Protocol
 
 * Passionate about creating and releasing projects, as well as learning new languages - Be able to identify relations between parts of complex projects
 * Be able to demonstrate a deep understanding of the blockchain architecture
-* Hold a Master's in computer science or an equivalent field \(STEM\)
+* Bachelor's degree in a technical field or equivalent practical experience
 * Proven analytical and proactive problem solving skills
 * Experience with modern development \(ES6, Typescript, NodeJS, etc.\). Knowledge of Solidity and Web3JS library is a plus
 * _Optional: You have the skills to recreate the Rick and Morty Portal Gun and an opinion on how to avoid being trapped into one of the Black Mirror scenarios of the future_
