@@ -36,7 +36,13 @@ The final step is to add a way to trigger the donations modal, add an id of requ
 
 You can view an example bare-bone implementation here: [https://donations.request.network/demo2/](https://donations.request.network/demo2/) \(currently running on Rinkeby\)
 
-### Filtering Currencies
+### SquareSpace Integration 
+
+A huge thanks to Franco for creating the following SquareSpace integration guide:
+
+[https://medium.com/@franco\_76154/how-to-start-accepting-crypto-donations-on-squarespace-for-n00bs-5d0125a67a1f](https://medium.com/@franco_76154/how-to-start-accepting-crypto-donations-on-squarespace-for-n00bs-5d0125a67a1f)
+
+## Filtering Currencies
 
 Currently, if you don't specify a 'currencies' parameter every accepted currency will show automatically, any new currencies that are supported will get automatically added. If you want to limit the currencies you want to accept simply add a 'currencies' parameter like so:
 
@@ -62,7 +68,7 @@ Currently, if you don't specify a 'currencies' parameter every accepted currency
 
 _Last updated: 2018/09/14_
 
-### Limiting the maximum donation amount
+## Limiting the maximum donation amount
 
 For tax purposes you might want to limit donation amounts to a certain value, to do this pass in a max\_amount parameter like below.
 
@@ -80,7 +86,7 @@ For tax purposes you might want to limit donation amounts to a certain value, to
 
 This is the current maximum donation amount in $ - multi-currency support will be available in the near future. 
 
-### Testing \(Rinkeby\)
+## Testing \(Rinkeby\)
 
 {% hint style="info" %}
  If you want to test on Rinkeby simply pass in a network parameter like so: 
