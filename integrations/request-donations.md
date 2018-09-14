@@ -16,7 +16,7 @@ Firstly, simply copy and paste the following script and paste just before the cl
 <script type="text/javascript" src="https://donations.request.network/donate.js"></script>
 <script type="text/javascript">
   var requestDonations = new requestNetworkDonations({
-    address: '0xc2390220fc9b6d014d86d90d873c3edb8c1c4156'
+    address: '0x2027c7fd9e48c028e7a927a6def44f4b2e52c703'
   });
   requestDonations.start();
 </script>
@@ -44,7 +44,7 @@ Currently, if you don't specify a 'currencies' parameter every accepted currency
 <script type="text/javascript" src="https://donations.request.network/donate.js"></script>
 <script type="text/javascript">
   var requestDonations = new requestNetworkDonations({
-    address: '0xc2390220fc9b6d014d86d90d873c3edb8c1c4156',
+    address: '0x2027c7fd9e48c028e7a927a6def44f4b2e52c703',
     currencies: ['ETH', 'REQ', 'DAI', 'OMG', 'KNC', 'DGX']
   });
   requestDonations.start();
@@ -61,6 +61,24 @@ Currently, if you don't specify a 'currencies' parameter every accepted currency
 * DGX \(Digix Gold Token\)
 
 _Last updated: 2018/09/14_
+
+### Limiting the maximum donation amount
+
+For tax purposes you might want to limit donation amounts to a certain value, to do this pass in a max\_amount parameter like below.
+
+```markup
+<script type="text/javascript" src="https://donations.request.network/donate.js"></script>
+<script type="text/javascript">
+  var requestDonations = new requestNetworkDonations({
+    address: '0x2027c7fd9e48c028e7a927a6def44f4b2e52c703',
+    currencies: ['ETH', 'REQ', 'DAI', 'OMG', 'KNC', 'DGX'],
+    max_amount: 200
+  });
+  requestDonations.start();
+</script>
+```
+
+This is the current maximum donation amount in $ - multi-currency support will be available in the near future. 
 
 ### Testing \(Rinkeby\)
 
