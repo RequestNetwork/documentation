@@ -65,8 +65,13 @@ Currently, if you don't specify a 'currencies' parameter every accepted currency
 * OMG \(OmiseGo\)
 * KNC \(Kyber Network\)
 * DGX \(Digix Gold Token\)
+* KIN \(Kin\)
+* BNB \(Binance Coin\)
+* BAT \(Basic Attention Token\)
+* ZRX \(0x\)
+* LINK \(Chainlink\)
 
-_Last updated: 2018/09/14_
+_Last updated: 2018/09/28_
 
 ## Limiting the maximum donation amount
 
