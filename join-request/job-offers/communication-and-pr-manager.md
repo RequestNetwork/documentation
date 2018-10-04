@@ -17,7 +17,7 @@ To promote the adoption of blockchain we provide a technology which allows every
 
 We are looking for a Communication & PR manager who has a strong interest to grow awareness of the Request brand portfolio. You will have an essential role in the foundation team to build a sustainable relationship between the foundation, media partners and the public.
 
-### **Your mission:**
+### **Your responsibilities**
 
 * Develop a productive PR network for the Request Foundation, cultivating collaborative relationships with press and other types of \(social\) influencers;
 * Lead all external communication activities on multiple channels, including social media;
@@ -28,7 +28,7 @@ We are looking for a Communication & PR manager who has a strong interest to gro
 * Recognize the importance of, and able to work with external \(local\) agencies when needed;
 * Track, analyze and report \(social\) media coverage internally.
 
-### **Qualifications:**
+### **Requirements**
 
 * Demonstrated experience in a communication and/or PR role within relevant sector;
 * 3+ years experience creating Social Media strategies and content;
@@ -63,7 +63,7 @@ People are smart enough to see the difference. And what counts is not who we are
 
 ### **Location**
 
-This role is based in the city centre of Amsterdam.
+This role is based in Amsterdam. Remote work will be partially possible after a while. of Amsterdam.
 
 ### **Want to join?**
 

@@ -1,3 +1,10 @@
+---
+description: >-
+  Are you excited about building a more efficient financial future with the use
+  of cutting-edge technology? You might be the Blockchain Engineer we are
+  looking for.
+---
+
 # Blockchain Engineer
 
 ### What do we do?
@@ -6,7 +13,7 @@ We empower everyone in the world to take full control over their personal financ
 
 To promote the adoption of blockchain we provide a technology which allows everyone to develop their own financial solution, built on the Request Network. We establish a standard for blockchain transactions, shaping the future of financial transactions \(i.e. invoices, loans, payments, salary, donations\) and their compliance for accounting, tax and audit integration.
 
-### What are we looking for?
+### Who are we looking for?
 
 We are looking for a Blockchain Engineer who has a strong interest in blockchain technology, open-source, decentralization, security, and testing. You can work autonomously, have strong integrity and are up for the challenge to build a more efficient future.
 

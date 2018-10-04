@@ -1,18 +1,31 @@
+---
+description: >-
+  Are you excited about building a more efficient financial future with the use
+  of cutting-edge technology? You might be the Full-stack Developer we are
+  looking for.
+---
+
 # Full-stack Developer with Front-end Focus
 
-## Job Description
+### What do we do?
+
+We empower everyone in the world to take full control over their personal finances.
+
+To promote the adoption of blockchain we provide a technology which allows everyone to develop their own financial solution, built on the Request Network. We establish a standard for blockchain transactions, shaping the future of financial transactions \(i.e. invoices, loans, payments, salary, donations\) and their compliance for accounting, tax and audit integration.
+
+### Who are we looking for?
 
 We are looking for a Full-stack developer who has a strong interest in blockchain technology, open-source, and in designing the best user experience. You can work autonomously, have a strong integrity and are up for the challenge to build a more efficient future.
 
 You will join the Request Network Foundation team which is part of the YCombinator network. We share strong values and have been working together for several years.
 
-### Responsibilities
+### Your responsibilities
 
 * Develop Request Network apps, libraries, and websites
 * Help educating our community about how to build on Request
 * Contribute to a decentralized payment protocol built on the blockchain
 
-### Qualifications
+### Requirements
 
 * Passionate about creating and releasing projects, as well as learning new languages - Be able to identify relations between parts of complex projects
 * Be able to demonstrate a deep understanding of the blockchain architecture
@@ -21,12 +34,32 @@ You will join the Request Network Foundation team which is part of the YCombinat
 * Experience with modern web development \(responsive design with HTML/CSS, ES6, React/ Angular/Node.js, etc.\). Knowledge of web3.js library is a plus
 * _Optional: You have the skills to recreate the Rick and Morty Portal Gun and an opinion on how to avoid being trapped into one of the Black Mirror scenarios of the future_
 
+### Why work with Request Network?
+
+* Being on the frontier of this new and exciting technology, you will be given the chance to lead the way forward!
+* You will have the opportunity to work in a highly ambitious team that wants to have a lasting impact on the way we experience finance tomorrow;
+* Work in an informal and friendly environment that is very open to new initiatives and ideas;
+* The team is inclusive, with inspirational and international colleagues that like to participate in team events;
+* You have input in the Amsterdam Spotify playlist;
+* Ride a Request bicycle around Amsterdam to stay efficient and healthy.
+
+### **More about us:**
+
+As young and small as Request Network may be, we believe in the calm of a master. We look at the essence of what we do and what we want to achieve. We need to manage our energy because we want to bring change. Big change. We waste no calories on building castles in the air or shiny headquarters on earth. We create the open network for all financial transactions.
+
+As dynamic and thrilling the developing universe of blockchain may be, we stay true to our ambition and drive. We pivot and change when needed. But we don’t chase every attractive opportunity. Only when it contributes to our main goal.  
+As seductive as the attraction of fame, fortune and a metropolitan life may be \(and the blockchain world is full of that\) we are happy to see that it adds to our attraction as a foundation. But doesn’t create a distraction from our mission. It can be a result, but it is certainly not our purpose.
+
+To summarise it in simple words: we are here to create the ecosystem of the future, not to hang around in the egosystem of the past.  
+This calm, perhaps serious attitude is not less powerful. Or less joyful. On the contrary. It’s just more authentic.  
+  
+People are smart enough to see the difference. And what counts is not who we are, but what we bring forward.
+
 ### Location {#location}
 
 This role is based in Amsterdam. Remote work will be partially possible after a while.
 
 ### Want to join?
 
-Are you convinced this job is for you? Send in your resume and motivation to [join@request.network ](mailto:join@request.network)and we will contact you as soon as possible.  
-
+Are you convinced this job is for you? Send in your resume and motivation to [join@request.network ](mailto:join@request.network)and we will contact you as soon as possible.
 
