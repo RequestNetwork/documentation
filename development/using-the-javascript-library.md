@@ -131,7 +131,7 @@ Payers can create and pay a request at once:
 
 ```javascript
 const { request } = await requestNetwork.createRequest(
-    Types.Role.Payee,
+    Types.Role.Payer,
     Types.Currency.ETH,
     [{
         idAddress: '0xc157274276a4e59974cca11b590b9447b26a8051',
