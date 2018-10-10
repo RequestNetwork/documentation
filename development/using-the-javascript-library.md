@@ -29,34 +29,38 @@ const requestNetwork = new RequestNetwork.default({
   useIpfsPublic: false,
 });
 
-const [payeeAddress, payerAddress] = await web3.eth.getAccounts();
+async function testPay() {
+  const [payeeAddress, payerAddress] = await web3.eth.getAccounts();
+  
+  // Create a request as payer
+  const payerInfo = {
+    idAddress: payerAddress,
+    refundAddress: payerAddress,
+  };
+  
+  const payeesInfo = [{
+    idAddress: payeeAddress,
+    paymentAddress: payeeAddress,
+    expectedAmount: web3.utils.toWei('1.5', 'ether'),
+  }];
+  
+  const { request } = await requestNetwork.createRequest(
+    RequestNetwork.Types.Role.Payee,
+    RequestNetwork.Types.Currency.ETH,
+    payeesInfo,
+    payerInfo,
+  );
+  
+  // Pay a request
+  await request.pay([web3.utils.toWei('1.5', 'ether')], [0], { from: payerAddress });
+  
+  // The balance is the same amount as the the expected amount: the request is paid
+  const data = await request.getData();
+  console.log(data.payee.expectedAmount.toString());
+  console.log(data.payee.balance.toString());
+}
 
-// Create a request as payer
-const payerInfo = {
-  idAddress: payerAddress,
-  refundAddress: payerAddress,
-};
-
-const payeesInfo = [{
-  idAddress: payeeAddress,
-  paymentAddress: payeeAddress,
-  expectedAmount: web3.utils.toWei('1.5', 'ether'),
-}];
-
-const { request } = await requestNetwork.createRequest(
-  RequestNetwork.Types.Role.Payee,
-  RequestNetwork.Types.Currency.ETH,
-  payeesInfo,
-  payerInfo,
-);
-
-// Pay a request
-await request.pay([web3.utils.toWei('1.5', 'ether')], [0], { from: payerAddress });
-
-// The balance is the same amount as the the expected amount: the request is paid
-const data = await request.getData();
-console.log(data.payee.expectedAmount.toString());
-console.log(data.payee.balance.toString());
+testPay()
 ```
 
 ## Importing and Initializing
@@ -80,7 +84,7 @@ The parameter for the constructor \(all optional\) are
 
 * provider: Web3.js Provider instance an url as string
 * ethNetworkId: the Ethereum network ID \(1: main, 2: morden, 3: ropsen, 4: rinkeby, 42: kovan, other: private\)
-* bitoinNetworkId: the Bitcoin network ID
+* bitcoinNetworkId: the Bitcoin network ID
 * useIpfsPublic: false to use a private ipfs network
 * ipfsCustomNode: define a custom ipfs node like {host, port, protocol}, if given with useIpfsPublic will throw an error
 
@@ -183,7 +187,7 @@ await request.reduceExpectedAmounts([web3.utils.toWei('.05', 'ether')]);
 ### Refund a Request
 
 ```javascript
-await request.refund([web3.utils.toWei('1.5', 'ether')]);
+await request.refund(web3.utils.toWei('1.5', 'ether'));
 ```
 
 ### Accept a Request
