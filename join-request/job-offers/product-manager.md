@@ -1,10 +1,3 @@
----
-description: >-
-  Are you excited about building a more efficient financial future with the use
-  of cutting-edge technology? You might be the Product Manager we are looking
-  for.
----
-
 # Product Manager
 
 ### What do we do?

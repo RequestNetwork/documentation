@@ -23,7 +23,7 @@ There are strong opportunities to improve invoicing by:
 
 ### **Online payments and gateways**
 
-In the past years, we've seen an important number of startups such as Adyen or Stripe conquer the market of online payments. These startups invoice around 1.5% of the transactions to consolidate invoices and credit card payments. They also have access to all of the vendors data.
+In the past years, we've seen an important number of startups such as Adyen or Stripe conquer the market of online payments. These startups invoice around 3% of the transactions to consolidate invoices and credit card payments. They also have access to all of the vendors data.
 
 The Request Network can help drive down the cost of transactions while allowing you to accept cryptocurrencies for payment. In addition, as with other projects based on the Request Network, the network will simplify your clients accounting and buyers will keep their data privacy.
 

@@ -1,10 +1,3 @@
----
-description: >-
-  Are you excited about building a more efficient financial future with the use
-  of cutting-edge technology? You might be the Blockchain Engineer we are
-  looking for.
----
-
 # Blockchain Engineer
 
 ### What do we do?

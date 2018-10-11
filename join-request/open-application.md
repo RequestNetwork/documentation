@@ -1,7 +1,3 @@
----
-description: How to send in an open application to join the Request Foundation
----
-
 # Open Application
 
 Are you passionate about blockchain technology, do you want to contribute to a better tomorrow and do you feel connected with [our Culture](https://docs.request.network/join-request/company-culture)?

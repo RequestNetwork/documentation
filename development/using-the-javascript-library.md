@@ -31,29 +31,29 @@ const requestNetwork = new RequestNetwork.default({
 
 async function testPay() {
   const [payeeAddress, payerAddress] = await web3.eth.getAccounts();
-  
+
   // Create a request as payer
   const payerInfo = {
     idAddress: payerAddress,
     refundAddress: payerAddress,
   };
-  
+
   const payeesInfo = [{
     idAddress: payeeAddress,
     paymentAddress: payeeAddress,
     expectedAmount: web3.utils.toWei('1.5', 'ether'),
   }];
-  
+
   const { request } = await requestNetwork.createRequest(
     RequestNetwork.Types.Role.Payee,
     RequestNetwork.Types.Currency.ETH,
     payeesInfo,
     payerInfo,
   );
-  
+
   // Pay a request
   await request.pay([web3.utils.toWei('1.5', 'ether')], [0], { from: payerAddress });
-  
+
   // The balance is the same amount as the the expected amount: the request is paid
   const data = await request.getData();
   console.log(data.payee.expectedAmount.toString());
@@ -109,7 +109,7 @@ const { request } = await requestNetwork.createRequest(
 );
 ```
 
-Use the currency parameter to choose the currency of the request. 
+Use the currency parameter to choose the currency of the request.
 
 Note: in local and rinkeby, REQ is the only ERC20 available. \(see [how to get test token on rinkeby](https://docs.request.network/development/using-the-javascript-library#get-erc20-test-token-on-rinkeby)\)
 
@@ -271,6 +271,4 @@ For advanced use, it is possible to access the internal layers of the library:
 const requestNetwork = new RequestNetwork();
 await requestNetwork.requestEthereumService.accept(requestId);
 ```
-
-
 

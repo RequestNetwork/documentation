@@ -1,9 +1,3 @@
----
-description: >-
-  The Request Foundation team uses Six cultural pillars to define its company
-  culture. These values define who we are and what we stand for.
----
-
 # Company Culture
 
 We are here to **serve as a bridge between the established and future world.** By enabling easy to use payment requests on the blockchain, the Request Network ecosystem empowers everyone in the world to take full control over their personal finances.

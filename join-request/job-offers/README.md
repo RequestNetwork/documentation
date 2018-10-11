@@ -1,7 +1,3 @@
----
-description: A list of all open job offers at the Request Foundation
----
-
 # Job Offers
 
 We currently have these positions open at the Request Foundation. If there is no position that suits your skillset, make sure to [send in an open application here.](https://docs.request.network/join-request/open-application)

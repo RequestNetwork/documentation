@@ -1,10 +1,3 @@
----
-description: >-
-  Are you excited about building a more efficient financial future with the use
-  of cutting edge technology? You might be the Communication & PR manager we are
-  looking for.
----
-
 # Communication & PR Manager
 
 ### **What do we do?**

@@ -1,10 +1,3 @@
----
-description: >-
-  Are you excited about building a more efficient financial future with the use
-  of cutting-edge technology? You might be the Full-stack Developer we are
-  looking for.
----
-
 # Full-stack Developer with Front-end Focus
 
 ### What do we do?

@@ -1,9 +1,3 @@
----
-description: >-
-  You can view the homepage of the donations app here:
-  https://donations.request.network/
----
-
 # Request Donations
 
 ## Adding Request Donations to your site. 
