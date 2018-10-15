@@ -35,7 +35,6 @@
     * [Product Manager](join-request/job-offers/product-manager.md)
     * [Communication & PR Manager](join-request/job-offers/communication-and-pr-manager.md)
     * [Growth Marketer](join-request/job-offers/growth-marketer.md)
-    * [HR Manager](join-request/job-offers/hr-manager.md)
   * [Company Culture](join-request/company-culture.md)
   * [Open Application](join-request/open-application.md)
 
