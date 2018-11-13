@@ -4,6 +4,5 @@ We currently have several positions open at the Request Foundation. If there is 
 
 * [Blockchain Engineer](https://request-network.homerun.co/blockchain-engineer)
 * [Full Stack Developer](https://request-network.homerun.co/full-stack-developer)
-* [Product Manager](https://request-network.homerun.co/product-manager-payments)
 * [Communication & PR Manager](https://request-network.homerun.co/communication-pr-manager)
 

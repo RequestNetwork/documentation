@@ -32,7 +32,6 @@
   * [Job Offers](join-request/job-offers/README.md)
     * [Blockchain Engineer](https://request-network.homerun.co/blockchain-engineer)
     * [Full Stack Developer](https://request-network.homerun.co/full-stack-developer)
-    * [Product Manager](https://request-network.homerun.co/product-manager-payments)
     * [Communication & PR Manager](https://request-network.homerun.co/communication-pr-manager)
   * [Company Culture](join-request/company-culture.md)
   * [Open Application](join-request/open-application.md)
