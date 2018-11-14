@@ -242,8 +242,9 @@ where `qsBase64` is a base 64 encoded string of a JSON object containing the fol
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| signedRequest | object | signedRequestData pamareter from the signedRequest object returned from requestnetwork.createSignedRequest method (see paragraph above for format). | callbackUrl | string | url for the gateway to redirect after request has been paid | 
-| networkId | string | id of the network on which you signed the request ([see step 1.](online-payments.md#1-create-a-request-for-payment-on-your-back-end)) |
+| signedRequest | object | signedRequestData pamareter from the signedRequest object returned from requestnetwork.createSignedRequest method \(see paragraph above for format\). |
+| callbackUrl | string | url for the gateway to redirect after request has been paid |
+| networkId | string | id of the network on which you signed the request \([see step 1.](online-payments.md#1-create-a-request-for-payment-on-your-back-end)\) |
 
 ### Paying on the gateway
 
@@ -385,9 +386,7 @@ For that you need to call an additionnal method:
 
 | Parameter | Type | Description |
 | :--- | :--- | :--- |
-| requestData | string | request data bytes \( |
-
-iable found in transaction json object above `transaction.method.parameters._requestData`\) \|
+| requestData | string | request data bytes \(variable found in transaction json object above `transaction.method.parameters._requestData`\) |
 
 From that point if you stored the signed request information on a database, you just need to verify that transaction.method.parameters.\_signature matches a known signature
 
