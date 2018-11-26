@@ -20,6 +20,7 @@
 * [Design](design.md)
 * [Integrations](integrations/README.md)
   * [Request Donations](integrations/request-donations.md)
+  * [Request CacheDB](integrations/request-cachedb.md)
 * [Documentation](documentation/README.md)
   * [Whitepaper](documentation/whitepaper.md)
   * [Smart Audits Yellowpaper](https://request.network/assets/pdf/request_yellowpaper_smart_audits.pdf)
