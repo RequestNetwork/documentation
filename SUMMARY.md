@@ -30,10 +30,7 @@
     * [In Progress](roadmap/protocol-development/in-progress.md)
     * [Up Next](roadmap/protocol-development/up-next.md)
 * [Join the Request Foundation Team](join-request/README.md)
-  * [Job Offers](join-request/job-offers/README.md)
-    * [Blockchain Engineer](https://request-network.homerun.co/blockchain-engineer)
-    * [Full Stack Developer](https://request-network.homerun.co/full-stack-developer)
-    * [Communication & PR Manager](https://request-network.homerun.co/communication-pr-manager)
+  * [Job Offers](join-request/job-offers.md)
   * [Company Culture](join-request/company-culture.md)
   * [Open Application](join-request/open-application.md)
 
