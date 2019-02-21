@@ -15,6 +15,7 @@
   * [API references](development/api-references/README.md)
     * [Smart Contracts](https://docs-smart-contracts.request.network/)
     * [Javascript Library](https://docs-js-lib.request.network/)
+* [Logo Assets](https://github.com/RequestNetwork/Request/tree/master/Hubs/Request%20Logos)
 * [Bug bounty](bug-bounty.md)
 * [Request Fund](request-fund.md)
 * [Roadmap](https://request.network/en/technology/#roadmap)
