@@ -1,11 +1,10 @@
 # Building with Request
 
-This is a regularly updated list of ideas for applications that can be built on top of the Request Network.
+This is a regularly updated list of ideas for applications that can be built on top of Request.
 
 There are many outside the box ideas that we have not thought about yet ourselves. Feel free to surprise us!
 
-These ideas can be applied to new startups and existing companies which are entering the blockchain space. By connecting your company to the Request Network, you will be able to access a modern and interoperable financial world adding simplicity for users and reducing costs.  
-
+These ideas can be applied to new startups and existing companies which are entering the blockchain space. By connecting your company to Request, you will be able to access a modern and interoperable financial world adding simplicity for users and reducing costs.
 
 Feel free to contact us when you are ready to take on the challenge.
 
@@ -15,8 +14,8 @@ Most of the invoices we pay are email or paper-based. In a digital world, this m
 
 There are strong opportunities to improve invoicing by:
 
-* Reducing cost by having the detection of payments happen on the blockchain through the Request Network.
-* Making it easy to detect incoming invoices by using the Request Network as an interoperable invoice layer \(i.e. one application creates an invoice, a different app can detect an incoming invoice and pay it\)
+* Reducing cost by having the detection of payments happen on the blockchain through  Request.
+* Making it easy to detect incoming invoices by using Request as an interoperable invoice layer \(i.e. one application creates an invoice, a different app can detect an incoming invoice and pay it\)
 * Supporting cryptocurrency invoices
 * Transforming invoices into smart invoices \(programmable\) and allow the use of escrow or advanced payment conditions.
 * Improving data privacy by letting users encrypt their invoices end-to-end.
@@ -25,9 +24,9 @@ There are strong opportunities to improve invoicing by:
 
 In the past years, we've seen an important number of startups such as Adyen or Stripe conquer the market of online payments. These startups invoice around 3% of the transactions to consolidate invoices and credit card payments. They also have access to all of the vendors data.
 
-The Request Network can help drive down the cost of transactions while allowing you to accept cryptocurrencies for payment. In addition, as with other projects based on the Request Network, the network will simplify your clients accounting and buyers will keep their data privacy.
+Request can help drive down the cost of transactions while allowing you to accept cryptocurrencies for payment. In addition, as with other projects based on Request, the network will simplify your clients accounting and buyers will keep their data privacy.
 
-A gateway is the part of the system which allows the user to pay a Request. Gateways can be integrated directly on your own website, or you can redirect to an existing gateway.
+A gateway is the part of the system which allows the user to pay a request. Gateways can be integrated directly on your own website, or you can redirect to an existing gateway.
 
 Ex. [Request gateway example](https://app.request.network/#/pay-with-request/eyJzaWduZWRSZXF1ZXN0Ijp7ImN1cnJlbmN5Q29udHJhY3QiOiIweGQ4OGFiOWIxNjkxMzQwZTA0YTViYmY3ODUyOWMxMWQ1OTJkMzVmNTciLCJkYXRhIjoiUW1Tc3JkQVBoRDVVa1JWREtWcEN3ZjYzbnJVeEJhTmJZbXBaMm5qYmt1OU1pNSIsImV4cGVjdGVkQW1vdW50cyI6WyIxNzUwMDAwMDAwMDAwMDAwMDAiXSwiZXhwaXJhdGlvbkRhdGUiOjE1MzMwNTUwMTYzMzksImhhc2giOiIweGUyNGI1MzVhYjc4M2ZiMDIzZWJhNTRiMjdlMGMyYTdiNmQyYWY5ZDNmYTNkMDcyZjQxYzVlYTlmNDg5NGYzYmQiLCJwYXllZXNJZEFkZHJlc3MiOlsiMHg4RjAyNTVlMjRCOTk4MjVlOUFENGJiNzUwNjY3OEYxOEM2MzA0NTNGIl0sInBheWVlc1BheW1lbnRBZGRyZXNzIjpbIjB4ZjlERjQ5MDE0NmIyOTQxOGE1OUY0M2REYjRBZmM1N0NkM2ZFZjg1NiJdLCJzaWduYXR1cmUiOiIweDVlOTk1MDdlOWU2ZGFhMTgxNDQ1YjJhMjA0YmVlM2MwODE2Y2QyNzgxYTIyZmUwYzkzNGEyYmI4NDA0YzgzYWIwODBlMGViYjM5NzcyMjMzNjRhZjFiMWM2M2EzNTVjMWQ1MzdiNThjMGJkOGNjMDliYzYyYmIwNTY5MzJhNWU5MWMifSwiY2FsbGJhY2tVcmwiOiJodHRwczovL3BheW1lbnRzLnJlcXVlc3QubmV0d29yay8jL2NvbmZpcm0vIiwibmV0d29ya0lkIjo0fQ%3D%3D)
 
@@ -35,7 +34,7 @@ Ex. [Request gateway example](https://app.request.network/#/pay-with-request/eyJ
 
 Accounting is one of the main pillars of the economy and is also one of the domains that has not evolved for a long time. We believe that accounting will become even more important in the future, evolving into an automated, real-time event which occurs entirely behind the scenes.
 
-By plugging your system to the Request Network, you'll be able to access the financial data of your clients in real time. The integrity of the data is ensured by the fact that an invoice is only shared between a client and a provider.
+By plugging your system to Request, you'll be able to access the financial data of your clients in real time. The integrity of the data is ensured by the fact that an invoice is only shared between a client and a provider.
 
 ### **Financial Audit**
 
@@ -66,7 +65,7 @@ Revolutions come from the people.
 
 Help detect inefficiencies and solve corruption by convincing NGOs and institutions to share their invoices on the blockchain in a transparent way.
 
-The Request Network empowers startups to build applications which analyse and visualize data to increase transparency. By doing so, these startups provide transparency towards communities which helps evolving our society toward more participation.
+Request empowers startups to build applications which analyse and visualize data to increase transparency. By doing so, these startups provide transparency towards communities which helps evolving our society toward more participation.
 
 More information on why budget transparency is important :
 
@@ -78,7 +77,7 @@ Worldbank : [https://siteresources.worldbank.org/EXTSOCIALDEVELOPMENT/Resources/
 
 Factoring is the business of selling an invoice to a third party at a discount to get financing.
 
-The database of invoices within the Request Network gives a simple way to view, share and sell invoices in a way that can be almost entirely automated, limiting the risks for the factoring company.
+The database of invoices within the Request network gives a simple way to view, share and sell invoices in a way that can be almost entirely automated, limiting the risks for the factoring company.
 
 ### **Debt collecting**
 
@@ -94,7 +93,7 @@ How do we get there?
 
 ### **Point-of-Sale**
 
-We are interested in seeing startups help commerce, bars and restaurants accept cryptocurrencies--possibly without even noticing it. The Request Network can match the invoice and payment without the usual cost from third parties.
+We are interested in seeing startups help commerce, bars and restaurants accept cryptocurrencies--possibly without even noticing it. Request can match the invoice and payment without the usual cost from third parties.
 
 For cryptocurrencies to reach mainstream adoption, people will need to be able to use them in their daily lives.
 
@@ -102,13 +101,13 @@ To take it one step further:
 
 Will we see token cashback when paying?
 
-Will we see bars creating and accepting their own cryptocurrencies through the Request Network?
+Will we see bars creating and accepting their own cryptocurrencies through Request?
 
 ### **Crowdfunding**
 
 Having many people participate in funding a project is becoming more and more common. When popular crowdfunding companies take a 10% cut, there is clearly a lot of room for innovation.
 
-We are interested in seeing people use the Request Network for crowdfunding, ICOs and exploring how to have interoperable crowdfunding between different applications.
+We are interested in seeing people use Request for crowdfunding, ICOs and exploring how to have interoperable crowdfunding between different applications.
 
 ### **Supply Chain traceability**
 
@@ -128,11 +127,11 @@ We are interested in projects which help detect incoming invoices and pay them--
 
 ### **Reputation**
 
-Each year, thousands of small and medium-sized enterprises \(SMEs\) go bankrupt while waiting for their invoices to be paid. The ECB \(European Central Bank\), in particular, is setting up solutions that startups can complete by adding a payment reputation system using the Request Network and key indicators. Today, a provider still has to trust its client and might not be paid. Tomorrow, the provider will be able to verify the payers clients reputation and other indicators, such as DPO \(Days Payable Outstanding\) before agreeing to a contract.
+Each year, thousands of small and medium-sized enterprises \(SMEs\) go bankrupt while waiting for their invoices to be paid. The ECB \(European Central Bank\), in particular, is setting up solutions for this. Startups can complete this solution by creating a payment reputation system using Request and key indicators. Today, a provider still has to trust its client and might not be paid. Tomorrow, the provider will be able to verify the payers clients reputation and other indicators, such as DPO \(Days Payable Outstanding\) before agreeing to a contract.
 
 ### **Governments**
 
-Governments requiring companies to report all transactions could be creating errors and duplications. The Request Network can also allow governments to view their economy in real time and automatically collect taxes from VAT or other sales taxes. This money would be instantly collected, and transferred to the treasury. Whether one is pro-government or not, the possibility to simplify and make the levies of taxes transparent is a real improvement.
+Governments requiring companies to report all transactions could be creating errors and duplications. Request can also allow governments to view their economy in real time and automatically collect taxes from VAT or other sales taxes. This money would be instantly collected, and transferred to the treasury. Whether one is pro-government or not, the possibility to simplify and make the levies of taxes transparent is a real improvement.
 
 We are interested in seeing startups work on projects with institutions on these subjects.
 
