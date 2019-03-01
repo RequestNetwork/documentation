@@ -1,8 +1,8 @@
 # Request Fund
 
-Our **goal** is to scale the Request Network Project in a decentralized way and build an efficient future together. For this to happen, we came up with a \(non-exhaustive\) project list. Each project can be developed either by the Request team or by anyone inside the Request Hub ecosystem. If developed by someone or a company from the ecosystem, Request Network will reward contributors with grants.
+Our **goal** is to scale the Request Project in a decentralized way and build an efficient future together. For this to happen, we came up with a \(non-exhaustive\) project list. Each project can be developed either by the Request team or by anyone inside the Request Hub ecosystem. If developed by someone or a company from the ecosystem, Request will reward contributors with grants.
 
-We’re looking for passionate people and teams who are willing to join forces to build out Request more efficiently. There are many other projects Request Network could support, we will thus update the list over time.
+We’re looking for passionate people and teams who are willing to join forces to build out Request more efficiently. There are many other projects Request could support, we will thus update the list over time.
 
 **The Request Foundation allocated $30 million \(in REQ & ETH\) over the next 5 years to the Request Fund.**
 

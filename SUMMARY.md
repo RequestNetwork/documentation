@@ -9,7 +9,7 @@
   * [Guides](development/guides/README.md)
     * [Signed Request](development/guides/signed-request.md)
     * [Online Payments](development/guides/online-payments.md)
-    * [Using Request Network Data Format](development/guides/using-request-network-data-format.md)
+    * [Using Request Data Format](development/guides/using-request-network-data-format.md)
     * [Adding support for a new currency](development/guides/adding-support-for-a-new-currency.md)
     * [Apps analytics with the "builderId" field](development/guides/apps-analytics-with-the-builderid-field.md)
   * [API references](development/api-references/README.md)
