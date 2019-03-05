@@ -1,7 +1,5 @@
 # Bug bounty
 
-![](.gitbook/assets/bugbounty.png)
-
 The Bug Bounty currently targets the smart contracts listed below. The branch to audit is **master.**
 
 * contracts/core/Administrable.sol
