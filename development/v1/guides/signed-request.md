@@ -4,11 +4,11 @@
 
 When dealing with B2B invoices, you especially need to broadcast your transaction on the blockchain so that your client can detect it automatically. But when you are at a Point of Sale or an online store, the vendor doesn’t need to broadcast the invoice on the blockchain. If he did so, the buyer would have to wait for blockchain confirmation and it would add a gas cost as the process would need 2 transactions on the blockchain.
 
-![The regular workflow for a request](../../.gitbook/assets/notsignedreq.PNG)
+![The regular workflow for a request](../../../.gitbook/assets/notsignedreq.PNG)
 
 The solution to bypass the invoice broadcasting is to work on an ECDSA optimization where the seller encrypts his transaction, provides it to the client who accepts the invoice, pays it and broadcasts it in a single transaction. Most blockchain systems \(including Ethereum and Bitcoin\) use the Elliptic Curve Digital Signature Algorithm \(ECDSA\) for cryptographically signing transactions. We use it to prove that the sender of the transaction had access to a private key and that the transaction has not been changed since it was signed.
 
-![The workflow for a signed request](../../.gitbook/assets/signedreq.PNG)
+![The workflow for a signed request](../../../.gitbook/assets/signedreq.PNG)
 
 In the signed request workflow, only one Ethereum transaction is needed:
 
