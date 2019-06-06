@@ -117,7 +117,7 @@ We can then use this object to check various fields of the request like `expecte
 
 #### Accepting / cancelling an invoice information
 
-After the invoice has been created, the customer can accept the invoice. First you must create a signature as per [https://github.com/RequestNetwork/requestNetwork-private/blob/development/packages/types/src/signature-types.ts\#L2](https://github.com/RequestNetwork/requestNetwork-private/blob/development/packages/types/src/signature-types.ts#L2) - after this you can accept, decline or change the expected amount of the invoice
+After the invoice has been created, the customer can accept the invoice. First you must create a signature as per [https://github.com/RequestNetwork/requestNetwork/blob/development/packages/types/src/signature-types.ts\#L2](https://github.com/RequestNetwork/requestNetwork/blob/development/packages/types/src/signature-types.ts#L2) - after this you can accept, decline or change the expected amount of the invoice
 
 ```javascript
 //Accept

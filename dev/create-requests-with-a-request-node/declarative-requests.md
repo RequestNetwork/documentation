@@ -10,7 +10,7 @@ A request using the declarative payment network allows the payee and the payer t
 
 In such a request the balance is computed only regarding the declaration made by these two stakeholders.
 
-You can find a complete example in the request github repository: [https://github.com/RequestNetwork/requestNetwork/tree/master/packages/usage-examples/src/request-client-js-declarative-request.ts](https://github.com/RequestNetwork/requestNetwork/tree/master/packages/usage-examples/src/request-client-js-declarative-request.ts)
+You can find a complete example in the request github repository: [https://github.com/RequestNetwork/requestNetwork/tree/master/packages/usage-examples/src/request-client-js-declarative-request.ts](https://github.com/RequestNetwork/requestNetwork/blob/development/packages/usage-examples/src/request-client-js-declarative-request.ts)
 
 ### Creation
 
