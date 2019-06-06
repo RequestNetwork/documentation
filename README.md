@@ -1,6 +1,6 @@
 # Introduction
 
-Request is a decentralized network built on top of Ethereum, which allows anyone, anywhere to request, validate and execute payment requests.
+Request is a decentralized network built on top of Ethereum, which allows anyone, anywhere to request, validate and execute payments.
 
 The strength of this open network relies on the ecosystem of builders who transform the potential of Request into innovation, in the hands of final users.
 
