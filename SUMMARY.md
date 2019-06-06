@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Request Fund](resources/request-fund.md)
 
 ## Dev
 
