@@ -2,7 +2,7 @@
 
 ## Adding Request Donations to your site. 
 
-Adding cryptocurrency donations has never been easier, in just a few steps you can start receiving donations in several cryptocurrencies powered by the Request Network.
+Adding cryptocurrency donations has never been easier, in just a few steps you can start receiving donations in several cryptocurrencies powered by the Request network.
 
 Firstly, simply copy and paste the following script and paste just before the closing &lt;body&gt; tag on your site. 
 
@@ -54,7 +54,7 @@ Currently, if you don't specify a 'currencies' parameter every accepted currency
  You can also filter the order of the currencies simply by rearranging the values, a full exhaustive list on accepted currencies are as follows:
 
 * ETH \(Ether\)
-* REQ \(Request Network\)
+* REQ \(Request\)
 * DAI \(DAI stablecoin\)
 * OMG \(OmiseGo\)
 * KNC \(Kyber Network\)
@@ -90,7 +90,7 @@ This is the current maximum donation amount in $ - multi-currency support will b
 {% hint style="info" %}
  If you want to test on Rinkeby simply pass in a network parameter like so: 
 
-```markup
+```javascript
 var requestDonations = new requestNetworkDonations({
     address: '0xc2390220fc9b6d014d86d90d873c3edb8c1c4156',
     currencies: ['ETH', 'REQ', 'DAI', 'OMG', 'KNC', 'DGX'],

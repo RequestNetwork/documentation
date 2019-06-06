@@ -4,10 +4,6 @@ Our **goal** is to scale the Request Project in a decentralized way and build an
 
 We’re looking for passionate people and teams who are willing to join forces to build out Request more efficiently. There are many other projects Request could support, we will thus update the list over time.
 
-**The Request Foundation allocated $30 million \(in REQ & ETH\) over the next 5 years to the Request Fund.**
-
-Amounts: up to $100k per project, paid out when pre-defined milestones are reached. Grants might increase for highly successful projects. These grants are intended to cover some of the costs involved so that anyone can build on top of Request.
-
 Here is a first list of project ideas we would be keen to fund:
 
 * Mobile apps to create, detect, and pay requests
@@ -57,7 +53,7 @@ If your project qualifies, you can expect two responses within 21 days:
 **A.** You are eligible for a grant \(ETH and REQ vesting\).  
 **B.** We need more information, which could result in point A at a later point in time.
 
-**Join the Request Hub** [**here**](https://join.slack.com/t/requesthub/shared_invite/enQtMjkwNDQwMzUwMjI3LWNlYTlmODViMmE3MzY0MWFiMTUzYmNiMWEyZmNiNWZhMjM3MTEzN2JkZTMxN2FhN2NmODFkNmU5MDBmOTUwMjA) **and apply to the Request Fund** [**here**](https://moneytis1.typeform.com/to/zZ5zUj)**.**
+**Join the Request Hub** [**here**](https://join.slack.com/t/requesthub/shared_invite/enQtMjkwNDQwMzUwMjI3LWNlYTlmODViMmE3MzY0MWFiMTUzYmNiMWEyZmNiNWZhMjM3MTEzN2JkZTMxN2FhN2NmODFkNmU5MDBmOTUwMjA) **and apply to the Request Fund** [**here**](https://request.network/#/request-for-projects)**.**
 
 Grants will be distributed at the discretion of the Request Foundation. Conditions may change over time and based on our experience.
 
