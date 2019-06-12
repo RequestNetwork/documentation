@@ -4,6 +4,7 @@
 
 ## Dev
 
+* [First steps with Request API](dev/first-steps-with-request-api.md)
 * [Request Client](dev/create-requests-with-a-request-node/README.md)
   * [Declarative requests](dev/create-requests-with-a-request-node/declarative-requests.md)
 * [Deploy a Request Node](dev/deploy-a-request-node.md)
