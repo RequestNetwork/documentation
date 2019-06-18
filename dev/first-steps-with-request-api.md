@@ -92,6 +92,12 @@ All API requests must be made over [HTTPS](http://en.wikipedia.org/wiki/HTTP_Sec
 
 The Request API uses conventional HTTP response codes to indicate the success or failure of an API request. In general: The `200` code indicates a successful request. Codes in the `4xx` range indicate an error that failed given the information provided \(e.g., a required parameter was omitted, authentication issue, etc.\).‌‌
 
+## **Pagination** <a id="pagination"></a>
+
+When fetching multiple Requests you will need to utilize cursor-based pagination via the `skip` and `take` parameters. Both parameters take an integer value and return a list of Requests ordered by the Request ID. The `skip` parameter bypasses a specified number of search results. The `take` parameter specifies the number of search results to return. Both of these parameters are optional, the defaults can be found [here](https://api-docs.request.network/).‌
+
+As an example, if you wanted to retrieve the first 50 Requests, `skip` would equal 0, and the `take`value would be 50. If you then wanted to retrieve the subsequent 50 Requests `skip` would equal 50, and `take`would equal 50.‌
+
 ## Basic Usage <a id="basic-usage"></a>
 
 Here is a basic example of creating a Request using the API via curl. Here, we are creating a basic BTC request.
