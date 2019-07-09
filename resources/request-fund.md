@@ -55,7 +55,7 @@ If your project qualifies, you can expect two responses within 21 days:
 **A.** You are eligible for a grant \(ETH and REQ vesting\).  
 **B.** We need more information, which could result in point A at a later point in time.
 
-**Join the Request Hub** [**here**](https://join.slack.com/t/requesthub/shared_invite/enQtMjkwNDQwMzUwMjI3LWNlYTlmODViMmE3MzY0MWFiMTUzYmNiMWEyZmNiNWZhMjM3MTEzN2JkZTMxN2FhN2NmODFkNmU5MDBmOTUwMjA) **and apply to the Request Fund** [**here**](https://request.network/#/request-for-projects)**.**
+**Join the Request Hub** [**here**](https://join.slack.com/t/requesthub/shared_invite/enQtMjkwNDQwMzUwMjI3LWNlYTlmODViMmE3MzY0MWFiMTUzYmNiMWEyZmNiNWZhMjM3MTEzN2JkZTMxN2FhN2NmODFkNmU5MDBmOTUwMjA) **and apply to the Request Fund** [**here.**](https://requestnetwork.typeform.com/to/zZ5zUj)\*\*\*\*
 
 Grants will be distributed at the discretion of the Request Foundation. Conditions may change over time and based on our experience.
 
