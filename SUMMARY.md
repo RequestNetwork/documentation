@@ -15,7 +15,7 @@
 
 ## Integrations <a id="integrations-1"></a>
 
-* [Xero \(upcoming\)](integrations-1/xero-upcoming.md)
+* [Xero Integration](integrations-1/xero-upcoming.md)
 * [Request Donations](integrations-1/request-donations.md)
 * [Request for e-commerce](integrations-1/request-for-e-commerce.md)
 
