@@ -1,4 +1,10 @@
-# Contributing
+---
+description: >-
+  Below you can find all information about how to contribute to the Request
+  protocol.
+---
+
+# How to contribute to the Request Protocol
 
 ## Guidelines for contributors
 

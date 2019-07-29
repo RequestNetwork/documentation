@@ -27,10 +27,3 @@ You may want to deploy your own node in a development environment. This is how:
   * `cd ../request-node`
   * `yarn run start`
 
-### Signing transactions
-
-Transactions are signed through Signature Providers. Today, the providers available for use are:
-
-* [Web3 Signature Provider](https://github.com/RequestNetwork/requestNetwork/tree/development/packages/web3-signature), compatible with metamask
-* [Ethereum Private Key Signature Provider](https://github.com/RequestNetwork/requestNetwork/tree/development/packages/epk-signature), using directly the private keys
-

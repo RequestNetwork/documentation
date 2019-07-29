@@ -1,23 +1,91 @@
-# Introduction
+---
+description: >-
+  Welcome to Request. Learn everything about Request products, discover their
+  advantages and explore their benefits.
+---
 
-Request is a decentralized network built on top of Ethereum, which allows anyone, anywhere to request, validate and execute payments.
+# Home
 
-A set of APIs allows developers to interact with this network without blockchain knowledge. To run the example below, you need to get your API key from [https://dashboard.request.network](https://dashboard.request.network):
+## Getting Started
 
-{% embed url="https://runkit.com/adamdowson/create-a-request/5.0.0" %}
+Request enables companies ****and individuals to create, exchange and process invoices and payment requests through a global network.  
+  
+To benefit from the features of the Request network, there a multiple ways to get started. 
 
-The strength of this open network relies on the ecosystem of builders who transform the potential of Request into innovation, in the hands of final users.
+**The Request API**
 
-This documentation explains what Request does, how it works and how developers can build with it. Getting started with Request is incredibly simple, in just a few lines you can begin creating, finding and updating invoices using the blockchain. 
+Simplify interactions with the Request Protocol by abstracting all blockchain-related aspects. The Request REST API enables you to create requests, list requests and find a specific request by its ID.
 
-Contribution on this documentation is welcome!
+{% page-ref page="request-api/getting-started-with-request-api.md" %}
 
-## Overview
+**The Request Protocol library & node**
 
-The development is organized like this:
+Have greater control over the way you implement the Request network into your product. Deploy your own node and interact with the network using the Request Client library.
 
-* The protocol is specified [here](dev/technical-documentation.md). It consists of five layers: storage, data access, transaction, logic and advanced logic.
-* The layers are implemented in Typescript in [this repository](https://github.com/RequestNetwork/requestNetwork). The protocol V1 is being deprecated, the V2 is currently in beta
-* The [Request Node](https://github.com/RequestNetwork/requestNetwork/tree/development/packages/request-node) relies on the two bottom layers.
-* The [Request Client](https://github.com/RequestNetwork/requestNetwork/tree/development/packages/request-client.js) relies on the three top layers.
+{% page-ref page="request-protocol/getting-started-1/" %}
+
+  
+**Request Integrations**
+
+Interact directly with Request from your current accounting software and enjoy the benefits of being connected to a global network of invoices and payments.
+
+{% page-ref page="request-integrations/xero-upcoming.md" %}
+
+## What is Request?
+
+By connecting transaction receipts \(invoices for B2B, purchase receipts for B2C and transaction receipts for C2C\) together with information flows from the payment industry, Request opens a wide range of new automation possibilities in corporate finance, particularly in invoicing, payments, tax collection, accounting and bookkeeping activities.
+
+Request is the blockchain backbone of Supply Chain Finance, where buyers and sellers share trusted information which is immutable and time stamped for accounting purposes. Based on set permissions, financing institutions may be granted access at some stages of the transaction lifecycle in order to provide short-term credit options. This optimizes working capital and increase business efficiency for both the buyer and the seller
+
+The blockchain based technology behind the Request protocol finally represents an opportunity for organizations to join a new paradigm, process transactions using digital asset \(tokenized assets, cryptocurrencies\) and benefit from smart contract possibilities to automate business relationships, enabling electronic invoices to become “smart objects“.
+
+These "smart objects" are called **requests**. See below what are their properties, states and actions:
+
+## Actions, States and Properties of a basic request <a id="actions-states-and-properties-of-a-request"></a>
+
+A request has these Properties:
+
+* **Payee**, identity of the payee
+* **Payer**, identity of the payer
+* **Expected Amount**, the amount expected to be paid
+* **Creator,** identity of the creator of the request
+* **Currency**
+* **Request Id**, id of the request
+* **State**, status of the request, can be:
+
+  * **Created**
+  * **Accepted**
+  * **Canceled**
+
+  \*\*\*\*
+
+For the Issuer, initiator of the request \(payee\):
+
+* **Create** a request
+* **Cancel** a request
+* **Add a subtract**. For example, refunds and discounts
+
+
+
+For the recipient of the request \(payer\):
+
+* **Create** a request
+* **Accept** a request. It is useful to recognize an invoice which have a later due date. It is not mandatory to accept a request to pay it
+* **Reject** \(cancel\) a request
+* **Add an additional.** Increase the amount to be paid, for example, to add tips
+
+## Payment detection, content data and more..
+
+On a top of a basic request, extensions can be added to make a basic request a smarter object:
+
+The two first extensions available are:
+
+* **Payment detection** \(so called payment network\)
+* **Content data:** the possibility to add any data to the minimum data set while initiating a transaction. This is the creation process of a “documented request” so called an Invoice
+
+## Request API and Request Protocol don't fit my needs?
+
+If you don't find what you are looking for with Request API and Request Protocol, you can directly develop using the lower level libraries of the Request Protocol. Feel free to contact us on the [Request Hub](https://requesthub.slack.com/join/shared_invite/enQtMjkwNDQwMzUwMjI3LWNlYTlmODViMmE3MzY0MWFiMTUzYmNiMWEyZmNiNWZhMjM3MTEzN2JkZTMxN2FhN2NmODFkNmU5MDBmOTUwMjA) for assistance!
+
+
 

@@ -2,19 +2,21 @@
 description: 'This API Is currently in Beta, its specification may change in the future.'
 ---
 
-# First steps with Request API
+# Getting Started
 
-> ## Getting Started with the Request API <a id="getting-started-with-the-request-api"></a>
+## Getting Started with the Request API
 
-Please note, if you would like to run a completely decentralised version of the Request network you can [deploy your own node](https://app.gitbook.com/@request-network/s/wiki/~/drafts/-LcBsRSy9E4i17Q4qI5V/revisions/-Lgfl4dbmxl4YLQEpBFF/resources/v1/protocol) and interact with the network using the [Request Client.](https://app.gitbook.com/@request-network/s/wiki/~/drafts/-LcBsRSy9E4i17Q4qI5V/revisions/-Lgfl4dbmxl4YLQEpBFF/resources/v1/protocol)​‌
-
-The Request API is a REST API that enables you to create Requests, list Requests, and find a specific Request by its ID. Its purpose is to simplify interaction with the Request Protocol, abstracting all Blockchain-related aspects.‌‌
+The Request API is a REST API that enables you to create requests, list requests, and find a specific request by its ID. Its purpose is to simplify interaction with the Request Protocol, abstracting all Blockchain-related aspects.‌‌
 
 It is currently an alpha version, running on the [Rinkeby](https://www.rinkeby.io/) Ethereum test network. **It should not be used for production yet.** Please check our [roadmap](https://request.network/en/technology#roadmap) to know more about our Protocol release to the Ethereum Mainnet.‌‌
 
 Our API accepts [JSON-encoded](http://www.json.org/) request bodies, returns [JSON-encoded](http://www.json.org/) responses, and uses standard HTTP response codes and Bearer authentication.‌‌
 
 Before using the API you MUST create an account [here](https://dashboard.request.network/), and retrieve your API Key.‌‌
+
+{% hint style="info" %}
+Please note, if you would like to run a completely decentralized version of the Request network you can [deploy your own node](../request-protocol/getting-started-1/deploy-a-request-node.md) and interact with the network using the [Request Client.](../request-protocol/getting-started-1/)​‌
+{% endhint %}
 
 ## API Specs and Structure <a id="api-specs-and-structure"></a>
 

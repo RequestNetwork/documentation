@@ -4,7 +4,7 @@ description: >-
   to declare the payments and refunds they create and receive.
 ---
 
-# Declarative requests
+# Others \(Declarative requests\)
 
 A request using the declarative payment network allows the payee and the payer to declare the payments and refunds they create and receive.
 

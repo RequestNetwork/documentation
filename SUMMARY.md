@@ -1,43 +1,61 @@
 # Table of contents
 
-* [Introduction](README.md)
+* [Home](README.md)
 
-## Dev
+## Request API
 
-* [First steps with Request API](dev/first-steps-with-request-api.md)
-* [Request Client](dev/create-requests-with-a-request-node/README.md)
-  * [Declarative requests](dev/create-requests-with-a-request-node/declarative-requests.md)
-* [Deploy a Request Node](dev/deploy-a-request-node.md)
-* [Contributing](dev/contributing.md)
-* [Bug bounty](dev/bug-bounty.md)
-* [Building with Request](dev/building-with-request.md)
-* [Technical Documentation](dev/technical-documentation.md)
+* [Getting Started](request-api/getting-started-with-request-api.md)
 
-## Integrations <a id="integrations-1"></a>
+## Request Protocol
 
-* [Xero Integration](integrations-1/xero-upcoming.md)
-* [Request Donations](integrations-1/request-donations.md)
-* [Request for e-commerce](integrations-1/request-for-e-commerce.md)
+* [Getting Started](request-protocol/getting-started-1/README.md)
+  * [Using Request client js library](request-protocol/getting-started-1/using-request-client-js-library.md)
+  * [Deploy a Request Node](request-protocol/getting-started-1/deploy-a-request-node.md)
+* [Payment detection](request-protocol/payment-detection/README.md)
+  * [Bitcoin](request-protocol/payment-detection/bitcoin.md)
+  * [Ethereum](request-protocol/payment-detection/ethereum.md)
+  * [ERC20 \(DAI, REQ etc.. \)](request-protocol/payment-detection/erc20-dai-req-etc...md)
+  * [Fiat](request-protocol/payment-detection/fiat.md)
+  * [Others \(Declarative requests\)](request-protocol/payment-detection/declarative-requests.md)
+* [Specifications](request-protocol/specifications.md)
 
-## Resources
+## Request Integrations
 
-* [Request Fund](resources/request-fund.md)
-* [Whitepaper](resources/whitepaper.md)
+* [Xero Integration](request-integrations/xero-upcoming.md)
+
+## Contribute
+
+* [How to contribute to the Request Protocol](contribute/guidelines.md)
+* [Bug bounty](contribute/bug-bounty.md)
+* [Request Fund](contribute/request-fund/README.md)
+  * [Am I eligible?](contribute/request-fund/am-i-eligible.md)
+  * [How to apply?](contribute/request-fund/how-to-apply.md)
+* [Building ideas on Request](contribute/building-with-request.md)
+
+## \(Deprectated\) Request Protocol v1
+
+* [Getting started](deprectated-request-protocol-v1/getting-started-1.md)
+* [Protocol v1](deprectated-request-protocol-v1/protocol.md)
+* [Guides](deprectated-request-protocol-v1/guides/README.md)
+  * [Signed Request](deprectated-request-protocol-v1/guides/signed-request.md)
+  * [Online Payments](deprectated-request-protocol-v1/guides/online-payments.md)
+  * [Using Request Data Format](deprectated-request-protocol-v1/guides/using-request-network-data-format.md)
+  * [Adding support for a new currency](deprectated-request-protocol-v1/guides/adding-support-for-a-new-currency.md)
+  * [Apps analytics with the "builderId" field](deprectated-request-protocol-v1/guides/apps-analytics-with-the-builderid-field.md)
+* [Using the Javascript Library](deprectated-request-protocol-v1/using-the-javascript-library.md)
+* [API references](deprectated-request-protocol-v1/api-references/README.md)
+  * [Smart Contracts](https://docs-smart-contracts.request.network/)
+  * [Javascript Library](https://docs-js-lib.request.network/)
+* [Existing projects based on Protocol v1](deprectated-request-protocol-v1/existing-projects-based-on-protocol-v1/README.md)
+  * [Request a Payment](https://app.request.network)
+  * [Request Donations](deprectated-request-protocol-v1/existing-projects-based-on-protocol-v1/request-donations-1.md)
+  * [Request for e-commerce](deprectated-request-protocol-v1/existing-projects-based-on-protocol-v1/request-for-e-commerce.md)
+
+## Annexes
+
+* [Whitepaper](annexes/whitepaper.md)
 * [Smart Audits Yellowpaper](https://request.network/assets/pdf/request_yellowpaper_smart_audits.pdf)
 * [Roadmap](https://request.network/en/technology/#roadmap)
 * [Request Hub](https://requesthub.slack.com/join/shared_invite/enQtMjkwNDQwMzUwMjI3LWNlYTlmODViMmE3MzY0MWFiMTUzYmNiMWEyZmNiNWZhMjM3MTEzN2JkZTMxN2FhN2NmODFkNmU5MDBmOTUwMjA)
-* [Resources for v1](resources/v1/README.md)
-  * [Protocol](resources/v1/protocol.md)
-  * [Getting started](resources/v1/getting-started.md)
-  * [Using the Javascript Library](resources/v1/using-the-javascript-library.md)
-  * [Guides](resources/v1/guides/README.md)
-    * [Signed Request](resources/v1/guides/signed-request.md)
-    * [Online Payments](resources/v1/guides/online-payments.md)
-    * [Using Request Data Format](resources/v1/guides/using-request-network-data-format.md)
-    * [Adding support for a new currency](resources/v1/guides/adding-support-for-a-new-currency.md)
-    * [Apps analytics with the "builderId" field](resources/v1/guides/apps-analytics-with-the-builderid-field.md)
-  * [API references](resources/v1/api-references/README.md)
-    * [Smart Contracts](https://docs-smart-contracts.request.network/)
-    * [Javascript Library](https://docs-js-lib.request.network/)
 * [Join Request](https://request.network/career)
 

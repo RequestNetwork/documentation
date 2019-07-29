@@ -1,4 +1,4 @@
-# Building with Request
+# Building ideas on Request
 
 This is a regularly updated list of ideas for applications that can be built on top of Request.
 

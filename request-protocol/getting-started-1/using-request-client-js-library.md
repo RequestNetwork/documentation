@@ -1,4 +1,4 @@
-# Request Client
+# Using Request client js library
 
 You can use the Request Client library to connect to an existing node, for example one you have deployed yourself. You can view an interactive example of using the request client below. 
 
@@ -63,7 +63,7 @@ const requestParameters = {
 };
 ```
 
-We will also need to define a payment network which will define which payment address will receive the BTC payment 
+We will also need to define a payment network which will define which payment address will receive the BTC payment \(see [payment detection](../payment-detection/)\)
 
 ```javascript
 const paymentNetwork = {
@@ -135,18 +135,10 @@ await request.increaseExpectedAmountRequest(amount, signatureInfo);
 
 Don't forget, we can then call `fromRequestId` to get the updated invoice information. 
 
-#### Payment and refund detection
+### Signing transactions
 
-If a payment network has been given to the request, the payment detection can be done.
+Transactions are signed through Signature Providers. Today, the providers available for use are:
 
-From the information provided in payment network, the library will feed the property `balance` of the request with:
-
-* `balance`: the sum of the amount of all payments minus the sum of amount of all refunds
-* `events`: all the payments and refunds events with the amount, timestamp etc...
-
-The payment networks available are:
-
-* `Types.PAYMENT_NETWORK_ID.DECLARATIVE` \('pn-any-declarative'\): Can be use with any currency. The payments and refunds are documented by the payer and the payee of the request. It does not ensure payment detection, only a consensus is made between the payer and the payee. \(see [declarative requests](declarative-requests.md)\)
-* `Types.PAYMENT_NETWORK_ID.BITCOIN_ADDRESS_BASED` \('pn-bitcoin-address-based'\): handle Bitcoin payments associated to a BTC address to the request, every transaction hitting this address will be consider as a payment. Eventually, the payer can provide a BTC address for the refunds. Note that **the addresses must be used only for one and only one request** otherwise one transaction will be considered as a payment for more than one request. \(see [the specification](https://github.com/RequestNetwork/requestNetwork-private/blob/development/packages/advanced-logic/specs/payment-network-btc-address-based-0.1.0-DRAFT.md)\)
-* `Types.PAYMENT_NETWORK_ID.TESTNET_BITCOIN_ADDRESS_BASED` \('pn-testnet-bitcoin-address-based'\): Same as previous but for the bitcoin testnet \(for test purpose\)
+* [Web3 Signature Provider](https://github.com/RequestNetwork/requestNetwork/tree/development/packages/web3-signature), compatible with metamask
+* [Ethereum Private Key Signature Provider](https://github.com/RequestNetwork/requestNetwork/tree/development/packages/epk-signature), using directly the private keys
 
