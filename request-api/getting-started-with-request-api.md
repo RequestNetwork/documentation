@@ -114,6 +114,14 @@ curl -H "Authorization: [API-KEY]" \
 
 Don't forget, you can get your API key from your [Request Dashboard](http://baguette-dashboard.request.network/).‌‌
 
+You can then retrieve your Request with this command.
+
+```bash
+curl -H "Authorization: [API-KEY]" \
+     -H "Content-Type: application/json" \
+     https://api.request.network/requests/[YOUR_REQUEST_ID]
+```
+
 ## Examples <a id="examples"></a>
 
 ### Creating an Invoice <a id="creating-a-request"></a>
@@ -122,11 +130,17 @@ To create an invoice, you must create a basic `Request` object which outlines so
 
 {% embed url="https://runkit.com/adamdowson/create-a-request/5.0.0" %}
 
-You will notice that the API returns both an `_id` and and a `requestId`, which is empty at first. This is to speed up the response time, as the `requestId` will only get computed when persisted on the blockchain. You can get the `requestId` by fetching the invoice data a few minutes after you've created it, using the `_id` field. This should be removed in a next release.
+The `data` object contains a `requestId` field that you can use for other API calls. 
+
+{% hint style="warning" %}
+**Heads up!** 
+
+If you are an early adopter of this API, please note the temporary `_id` field has been removed and replaced with `requestId`, which is the actual identifier of the Request on the Network. Use this field to fetch a Request, like in the example below.
+{% endhint %}
 
 ### Fetching an Invoice <a id="fetching-a-request"></a>
 
 All invoices have a unique ID, with this ID you can retrieve all the details of an invoice that has previously been created. By supplying the ID that was returned when creating the invoice you can query the endpoint as seen below, the API will then return the corresponding invoice information.‌
 
-{% embed url="https://runkit.com/adamdowson/find-a-request/6.0.0" %}
+{% embed url="https://runkit.com/benjlevesque/fetch-a-request" %}
 
