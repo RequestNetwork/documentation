@@ -104,8 +104,10 @@ As an example, if you wanted to retrieve the first 50 Requests, `skip` would equ
 
 Here is a basic example of creating a Request using the API via curl. Here, we are creating a basic BTC request.
 
+We assume API\_KEY environment variable is set. You can do that with `API_KEY=YOUR-API-KEY`.
+
 ```bash
-curl -H "Authorization: [API-KEY]" \
+curl -H "Authorization: $API_KEY" \
      -H "Content-Type: application/json" \
      -X POST \
      -d '{"currency": "BTC","expectedAmount": "100000000", "payment": { "type": "bitcoin-testnet", "value": "mqdT2zrDfr6kp69hHLBM8CKLMtRzRbT2o9" }}' \
@@ -117,7 +119,7 @@ Don't forget, you can get your API key from your [Request Dashboard](http://bagu
 You can then retrieve your Request with this command.
 
 ```bash
-curl -H "Authorization: [API-KEY]" \
+curl -H "Authorization: $API_KEY" \
      -H "Content-Type: application/json" \
      https://api.request.network/requests/[YOUR_REQUEST_ID]
 ```
