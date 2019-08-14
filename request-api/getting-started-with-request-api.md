@@ -108,7 +108,7 @@ Here is a basic example of creating a Request using the API via curl. Here, we a
 curl -H "Authorization: [API-KEY]" \
      -H "Content-Type: application/json" \
      -X POST \
-     -d '{"currency": "BTC","expectedAmount": "100000000", "payment": { "type": "bitcoin-testnet", "value": "mqdT2zrDfr6kp69hHLBM8CKLMtRzRbT2o9" }}' \ 
+     -d '{"currency": "BTC","expectedAmount": "100000000", "payment": { "type": "bitcoin-testnet", "value": "mqdT2zrDfr6kp69hHLBM8CKLMtRzRbT2o9" }}' \
      https://api.request.network/requests
 ```
 
