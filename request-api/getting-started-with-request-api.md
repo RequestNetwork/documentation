@@ -12,7 +12,7 @@ The Request API is a REST API that enables you to create requests, list requests
 
 Our API accepts [JSON-encoded](http://www.json.org/) request bodies, returns [JSON-encoded](http://www.json.org/) responses, and uses standard HTTP response codes and Bearer authentication.‌‌
 
-Before using the API you must create an account [here](https://dashboard.request.network/), and retrieve your **test** API Key \(which will run on the Rinkeby Ethereum Test network\).‌‌ If you would like to verify your code on Ethereum Mainnet, you may use the **live** API ****Key. 
+Before using the API you must create an account [here](https://dashboard.request.network/signup), and retrieve your **test** API Key \(which will run on the Rinkeby Ethereum Test network\).‌‌ If you would like to verify your code on Ethereum Mainnet, you may use the **live** API ****Key. 
 
 {% hint style="info" %}
 Please note, if you would like to run a completely decentralized version of the Request network you can [deploy your own node](../request-protocol/getting-started-1/deploy-a-request-node.md) and interact with the network using the [Request Client.](../request-protocol/getting-started-1/)​‌
