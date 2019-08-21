@@ -1,5 +1,7 @@
 ---
-description: 'This API Is currently in Beta, its specification may change in the future.'
+description: >-
+  This API Is currently in Beta, its specification may change in the future. We
+  do not recommend production usage yet.
 ---
 
 # Getting Started
@@ -8,11 +10,9 @@ description: 'This API Is currently in Beta, its specification may change in the
 
 The Request API is a REST API that enables you to create requests, list requests, and find a specific request by its ID. Its purpose is to simplify interaction with the Request Protocol, abstracting all Blockchain-related aspects.‌‌
 
-It is currently an alpha version, running on the [Rinkeby](https://www.rinkeby.io/) Ethereum test network. **It should not be used for production yet.** Please check our [roadmap](https://request.network/en/technology#roadmap) to know more about our Protocol release to the Ethereum Mainnet.‌‌
-
 Our API accepts [JSON-encoded](http://www.json.org/) request bodies, returns [JSON-encoded](http://www.json.org/) responses, and uses standard HTTP response codes and Bearer authentication.‌‌
 
-Before using the API you MUST create an account [here](https://dashboard.request.network/), and retrieve your API Key.‌‌
+Before using the API you must create an account [here](https://dashboard.request.network/), and retrieve your **test** API Key \(which will run on the Rinkeby Ethereum Test network\).‌‌ If you would like to verify your code on Ethereum Mainnet, you may use the **live** API ****Key. 
 
 {% hint style="info" %}
 Please note, if you would like to run a completely decentralized version of the Request network you can [deploy your own node](../request-protocol/getting-started-1/deploy-a-request-node.md) and interact with the network using the [Request Client.](../request-protocol/getting-started-1/)​‌
@@ -145,4 +145,8 @@ If you are an early adopter of this API, please note the temporary `_id` field h
 All invoices have a unique ID, with this ID you can retrieve all the details of an invoice that has previously been created. By supplying the ID that was returned when creating the invoice you can query the endpoint as seen below, the API will then return the corresponding invoice information.‌
 
 {% embed url="https://runkit.com/benjlevesque/fetch-a-request" %}
+
+## **Get Help**
+
+If you would like to get in touch with other developers, and the team that works on this API, you can join our [Slack workspace](https://requesthub.slack.com/join/shared_invite/enQtMjkwNDQwMzUwMjI3LWNlYTlmODViMmE3MzY0MWFiMTUzYmNiMWEyZmNiNWZhMjM3MTEzN2JkZTMxN2FhN2NmODFkNmU5MDBmOTUwMjA) and write in the \#develoment channel.
 
