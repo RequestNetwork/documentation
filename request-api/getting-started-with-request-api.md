@@ -104,8 +104,6 @@ As an example, if you wanted to retrieve the first 50 Requests, `skip` would equ
 
 Here is a basic example of creating a Request using the API via curl. Here, we are creating a basic BTC request.
 
-We assume API\_KEY environment variable is set. You can do that with `API_KEY=YOUR-API-KEY`.
-
 ```bash
 curl -H "Authorization: $API_KEY" \
      -H "Content-Type: application/json" \
@@ -114,7 +112,11 @@ curl -H "Authorization: $API_KEY" \
      https://api.request.network/requests
 ```
 
+We assume API\_KEY environment variable is set. You can do that with `API_KEY=YOUR-API-KEY`.
+
 Don't forget, you can get your API key from your [Request Dashboard](http://baguette-dashboard.request.network/).‌‌
+
+## Examples <a id="examples"></a>
 
 You can then retrieve your Request with this command.
 
@@ -124,8 +126,6 @@ curl -H "Authorization: $API_KEY" \
      https://api.request.network/requests/[YOUR_REQUEST_ID]
 ```
 
-## Examples <a id="examples"></a>
-
 ### Creating an Invoice <a id="creating-a-request"></a>
 
 To create an invoice, you must create a basic `Request` object which outlines some information about the Request such as the receiving payment address, which payment network is being used, the currency and the amount expected. You can retrieve individual requests as well as list all requests. Requests are identified by a unique UUID.‌‌
@@ -134,15 +134,17 @@ To create an invoice, you must create a basic `Request` object which outlines so
 
 The `data` object contains a `requestId` field that you can use for other API calls. 
 
+### Fetching an Invoice <a id="fetching-a-request"></a>
+
 {% hint style="warning" %}
 **Heads up!** 
 
 If you are an early adopter of this API, please note the temporary `_id` field has been removed and replaced with `requestId`, which is the actual identifier of the Request on the Network. Use this field to fetch a Request, like in the example below.
 {% endhint %}
 
-### Fetching an Invoice <a id="fetching-a-request"></a>
-
 All invoices have a unique ID, with this ID you can retrieve all the details of an invoice that has previously been created. By supplying the ID that was returned when creating the invoice you can query the endpoint as seen below, the API will then return the corresponding invoice information.‌
+
+{% embed url="https://runkit.com/adamdowson/find-a-request/5.0.0" %}
 
 {% embed url="https://runkit.com/benjlevesque/fetch-a-request" %}
 

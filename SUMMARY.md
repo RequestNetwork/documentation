@@ -18,6 +18,7 @@
   * [Fiat](request-protocol/payment-detection/fiat.md)
   * [Others \(Declarative requests\)](request-protocol/payment-detection/declarative-requests.md)
 * [Specifications](request-protocol/specifications.md)
+* [Request IPFS network](request-protocol/request-ipfs-network.md)
 
 ## Request Integrations
 
