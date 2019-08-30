@@ -102,7 +102,9 @@ As an example, if you wanted to retrieve the first 50 Requests, `skip` would equ
 
 ## Basic Usage <a id="basic-usage"></a>
 
-Here is a basic example of creating a Request using the API via curl. Here, we are creating a basic BTC request.
+We assume API\_KEY environment variable is set. You can do that with `API_KEY=YOUR-API-KEY`. Don't forget, you can get your API key from your [Request Dashboard](https://dashboard.request.network).‌‌
+
+Here is an example of creating a Request using the API via curl. We are creating a basic BTC request.
 
 ```bash
 curl -H "Authorization: $API_KEY" \
@@ -112,12 +114,6 @@ curl -H "Authorization: $API_KEY" \
      https://api.request.network/requests
 ```
 
-We assume API\_KEY environment variable is set. You can do that with `API_KEY=YOUR-API-KEY`.
-
-Don't forget, you can get your API key from your [Request Dashboard](http://baguette-dashboard.request.network/).‌‌
-
-## Examples <a id="examples"></a>
-
 You can then retrieve your Request with this command.
 
 ```bash
@@ -125,6 +121,10 @@ curl -H "Authorization: $API_KEY" \
      -H "Content-Type: application/json" \
      https://api.request.network/requests/[YOUR_REQUEST_ID]
 ```
+
+## Examples <a id="examples"></a>
+
+
 
 ### Creating an Invoice <a id="creating-a-request"></a>
 
