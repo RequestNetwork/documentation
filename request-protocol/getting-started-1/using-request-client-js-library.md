@@ -18,7 +18,7 @@ Use `@requestnetwork/request-client.js` to connect to a node and create requests
 npm install @requestnetwork/request-client.js
 ```
 
-More information is available on [github](https://github.com/RequestNetwork/requestNetwork/tree/development/packages/request-client.js).
+For more information you can check the [request-client.js documentation](https://v2-docs-js-lib.request.network/index.html) or our [github](https://github.com/RequestNetwork/requestNetwork/tree/development/packages/request-client.js) repo.
 
 You can also [follow this example](https://github.com/RequestNetwork/requestNetwork/blob/development/packages/integration-test/test/node-client.test.ts).
 

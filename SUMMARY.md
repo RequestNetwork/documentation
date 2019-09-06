@@ -19,6 +19,7 @@
   * [Others \(Declarative requests\)](request-protocol/payment-detection/declarative-requests.md)
 * [Specifications](request-protocol/specifications.md)
 * [Request IPFS network](request-protocol/request-ipfs-network.md)
+* [Request client js API](https://v2-docs-js-lib.request.network/index.html)
 
 ## Request Integrations
 
