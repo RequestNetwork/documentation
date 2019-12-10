@@ -14,7 +14,7 @@ Then, the payment network _**"pn-bitcoin-address-based"**_  must be given when c
 
 ```javascript
 const requestParameters = {
-  currency: RequestLogicTypes.CURRENCY.BTC, 
+  currency: 'BTC', 
   expectedAmount: '100000000000',
   payee: {
     type: IdentityTypes.TYPE.ETHEREUM_ADDRESS,

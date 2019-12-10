@@ -41,15 +41,13 @@ If you want to set up your IPFS node yourself, here is the information you would
 
 you should put this file at your IPFS path \(usually in $IPFS\_PATH\)
 
-{% code-tabs %}
-{% code-tabs-item title="swarm.key" %}
+{% code title="swarm.key" %}
 ```text
 /key/swarm/psk/1.0.0/
 /base16/
 5f3af0599d991e5eb4c37da2472aa299759ee3350ba26c125d0c7579dd04dd52
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 #### The configurations
 

@@ -50,7 +50,7 @@ Firstly, we need to define some parameters for the invoice such as the currency,
 
 ```javascript
 const requestParameters = {
-  currency: RequestLogicTypes.CURRENCY.BTC, 
+  currency: 'BTC', 
   expectedAmount: '100000000000',
   payee: {
     type: IdentityTypes.TYPE.ETHEREUM_ADDRESS,
