@@ -14,8 +14,30 @@ Below is an example of using the request-client.js as a commonjs module.
 
 Use `@requestnetwork/request-client.js` to connect to a node and create requests.
 
+### Installing in nodeJS
+
 ```bash
 npm install @requestnetwork/request-client.js
+```
+
+### Importing
+
+```javascript
+import { RequestNetwork } from '@requestnetwork/request-client.js'
+```
+
+```javascript
+const RequestNetwork = require('@requestnetwork/request-client.js');
+```
+
+### Including in Web Application
+
+```markup
+<!-- This exposes the library as a global variable: RequestNetwork -->
+<script src="https://unpkg.com/@requestnetwork/request-client.js/dist/requestnetwork.min.js"
+        charset="utf-8"
+        type="text/javascript">
+</script>
 ```
 
 For more information you can check the [request-client.js documentation](https://v2-docs-js-lib.request.network/index.html) or our [github](https://github.com/RequestNetwork/requestNetwork/tree/development/packages/request-client.js) repo.
