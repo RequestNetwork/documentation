@@ -39,10 +39,9 @@ const invoice = await requestNetwork.createRequest({
 
 Payments for Request using ERC20 proxy contract payment network are documented in an Ethereum smart contract: ERC20Proxy. This smart contract is available on Ethereum [mainnet](https://etherscan.io/address/0x5f821c20947ff9be22e823edc5b3c709b33121b3) and [Rinkeby testnet](https://rinkeby.etherscan.io/address/0x162edb802fae75b9ee4288345735008ba51a4ec9).
 
-
-
 The user also has to provide a payment reference to link the payments to the request. The payment reference is the last 8 bytes of a salted hash of the requestId: `last8Bytes(hash(lowercase(requestId + salt + address)))`.
 
+Any payments documented in the ERC20 proxy contract with the correct reference is considered as a payment for the request.
 
 ### Address based
 
