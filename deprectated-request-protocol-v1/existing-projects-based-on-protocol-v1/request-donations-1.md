@@ -55,7 +55,7 @@ Currently, if you don't specify a 'currencies' parameter every accepted currency
 
 * ETH \(Ether\)
 * REQ \(Request\)
-* DAI \(DAI stablecoin\)
+* Sai \(Single Collateral Dai stablecoin\)
 * OMG \(OmiseGo\)
 * KNC \(Kyber Network\)
 * DGX \(Digix Gold Token\)
