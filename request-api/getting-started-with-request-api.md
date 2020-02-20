@@ -136,17 +136,9 @@ The `data` object contains a `requestId` field that you can use for other API ca
 
 ### Fetching an Invoice <a id="fetching-a-request"></a>
 
-{% hint style="warning" %}
-**Heads up!** 
-
-If you are an early adopter of this API, please note the temporary `_id` field has been removed and replaced with `requestId`, which is the actual identifier of the Request on the Network. Use this field to fetch a Request, like in the example below.
-{% endhint %}
-
 All invoices have a unique ID, with this ID you can retrieve all the details of an invoice that has previously been created. By supplying the ID that was returned when creating the invoice you can query the endpoint as seen below, the API will then return the corresponding invoice information.‌
 
-{% embed url="https://runkit.com/adamdowson/find-a-request/5.0.0" %}
-
-{% embed url="https://runkit.com/benjlevesque/fetch-a-request" %}
+{% embed url="https://runkit.com/adamdowson/find-a-request/8.0.0" caption="Fetch a Request" %}
 
 ## **Get Help**
 
