@@ -29,7 +29,7 @@
 ## Contribute
 
 * [How to contribute to the Request Protocol](contribute/guidelines.md)
-* [Bug bounty](contribute/bug-bounty.md)
+* [Security reports](contribute/bug-bounty.md)
 * [Request Fund](contribute/request-fund/README.md)
   * [Am I eligible?](contribute/request-fund/am-i-eligible.md)
   * [How to apply?](contribute/request-fund/how-to-apply.md)
